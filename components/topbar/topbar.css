@@ -1,0 +1,77 @@
+
+/*======  Start topBar Styles =====*/
+.top-bar{
+    width: 100%;
+    padding: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--topBar-bg-color);
+}
+
+  .top-bar__right-container{ /*Empty*/
+
+  }
+
+    .top-bar__menu{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+        .top-bar__item{ /*Empty*/
+
+        }
+
+            .top-bar__link{
+                font-size: 1.5rem;
+                cursor: pointer;
+
+            }
+            
+
+
+
+  .top-bar__left-container{
+    display: flex;
+    align-items: center;
+    gap: 3.75rem;
+    font-size: 1.6rem;
+  }
+
+    .top-bar__email{
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+        .top-bar__email-text{ /*Empty*/
+
+        }
+
+        .top-bar__email-icon{
+            color: var(--green-color);
+        }
+
+
+    .top-bar__phone{
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+        .top-bar__phone-text{ /*Empty*/
+
+        }
+
+        .top-bar__phone-icon{
+            color: var(--green-color);
+        }
+/*======  Finish topBar Styles =====*/
+
+@media screen and (max-width : 1200px) {
+    
+    top-bar{
+        display: none;
+    }
+}

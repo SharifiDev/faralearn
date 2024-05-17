@@ -1,0 +1,231 @@
+@import url(../../components/loader/loader.css);
+@import url(../default.css);
+@import url(../../components/topbar/topbar.css);
+@import url(../../components/navbar/navbar.css);
+@import url(../../components//mobileNav/mbileNav.css);
+@import url(../../components/footer/footer.css);
+@import url(../container.css);
+@import url(../helper-class.css);
+
+
+
+/*======   Start Main  Styles =====*/
+.main{
+    margin: 8rem 0 7.5rem 0;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+nav-bar{
+    position: static;
+    display: block;
+}
+.navbar{
+    background-color: var(--navBar-bg-color);
+}
+/*======   Finish Main  Styles =====*/
+
+
+/*===============================       Start Login  Styles        ============================*/
+
+
+.form{
+    width: 50rem;
+    border-bottom: 0.5rem solid var(--topBar-bg-color);
+    border-radius: 0.5rem 0.5rem 1.5rem 1.5rem;
+    background-color: var(--swiper-bg-color);
+    -webkit-border-radius: 0.5rem 0.5rem 1.5rem 1.5rem;
+    -moz-border-radius: 0.5rem 0.5rem 1.5rem 1.5rem;
+    -ms-border-radius: 0.5rem 0.5rem 1.5rem 1.5rem;
+    -o-border-radius: 0.5rem 0.5rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: stretch;
+    padding: 2.5rem 1.8rem;
+    box-shadow: 0px 0px 10px 5px #ffffff15;
+}
+.form__header{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+.form__header-title{
+    font-size: 2rem;
+}
+.form__header-subtitle{
+    font-size: 1.5rem;
+    color: var(--subtitle-color);
+}
+.form__nav{
+    background-color: var(--topBar-bg-color);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    border-radius: 0.8rem;
+    -webkit-border-radius: 0.8rem;
+    -moz-border-radius: 0.8rem;
+    -ms-border-radius: 0.8rem;
+    -o-border-radius: 0.8rem;
+}
+.form__nav__text{
+    color: var(--subtitle-color);
+}
+.form__nav__link{
+    padding: 0.4rem 1rem;
+    background-color: #504f4fab;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    cursor: pointer;
+}
+/*===============================       Finish Login  Styles        ============================*/
+
+
+
+
+/*===============================       Start Form  Styles        ============================*/
+.inputs{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 1.5rem;
+}
+.inputs-inputBox{
+    position: relative;
+    background: transparent;
+    
+    height: 5rem;
+
+}
+.inputs-input{
+    width: 100%;
+    height: 100%;
+    padding: 0 1.5rem 0 3rem;
+    background-color: transparent;
+    border: 1px solid var(--subtitle-color);
+    border-radius: 0.4rem;    
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+}
+.inputs-input:valid{
+    direction: ltr;
+    box-shadow: 0px 0px 10px 0px #ffffff44;
+    border-radius: 0.4rem 0.4rem 1rem 1rem;
+    border-bottom: 2.5px solid var(--green-color);
+    -webkit-border-radius: 0.4rem 0.4rem 1rem 1rem;
+    -moz-border-radius: 0.4rem 0.4rem 1rem 1rem;
+    -ms-border-radius: 0.4rem 0.4rem 1rem 1rem;
+    -o-border-radius: 0.4rem 0.4rem 1rem 1rem;
+}
+#name{
+    direction: rtl;
+}
+.inputs-icon{
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    color: var(--subtitle-color);
+}
+
+
+.form-btn{
+    height: 6rem;
+    position: relative;
+    background-color: var(--green-color);
+    border-radius: 0.75rem;
+    -webkit-border-radius: 0.75rem;
+    -moz-border-radius: 0.75rem;
+    -ms-border-radius: 0.75rem;
+    -o-border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+/* .form-btn__text */
+.form-btn__icon{
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.form-btn__text,
+.form-btn__icon{
+    font-size: 2rem;
+}
+
+
+.form__pass-setting{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.form__pass-setting__remember-me{
+    cursor: pointer;
+}
+/* .form__pass-setting__remember-me__input */
+.form__pass-setting__remember-me__text{
+    margin-right: 0.75rem;
+}
+.form__pass-setting__froget-pass{
+    color: var(--subtitle-color);
+    cursor: pointer;
+}
+
+.form__des{
+    width: 100%;
+}
+.form__des-list{    
+    margin-top: 1rem;
+    list-style-type: disc ;
+    padding-right: 2.5rem;
+}
+.form-des-item{
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--subtitle-color);
+}
+
+
+.register{
+    display: none;
+}
+/*===============================       Finish Form  Styles        ============================*/
+
+input:-internal-autofill-selected{
+    background-color: transparent !important;
+    color: var(--text-color) !important;
+}
+
+.phone{
+    display: none;
+}
+
+

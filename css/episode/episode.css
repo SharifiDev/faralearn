@@ -1,0 +1,538 @@
+@import url(../../components/loader/loader.css);
+@import url(../default.css);
+@import url(../../components/topbar/topbar.css);
+@import url(../../components/navbar/navbar.css);
+@import url(../../components//mobileNav/mbileNav.css);
+@import url(../../components/footer/footer.css);
+@import url(../../css/container.css);
+@import url(../../components/breadcrumb/breadcrumb.css);
+@import url(../helper-class.css);
+
+
+
+.mobile-sidebar{
+  display: none;
+  margin-bottom: 4rem;
+}
+
+/*== Start Course Details Mobile Teacher Profile ==*/
+.course-detilas__mobile__teacher-profile{
+  width: 90%;
+  padding: 2.4rem;
+  margin: 6rem auto 0 auto;
+  background-color: var(--swiper-bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2rem;
+  border-radius: 1.6rem;
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+  -ms-border-radius: 1.6rem;
+  -o-border-radius: 1.6rem;
+}
+.course-detials__mobile__teacher-profile__top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--green-color);
+}
+/* .course-detilas__mobile__teacher-profile__right */
+  
+
+.course-detilas__mobile__teacher-profile__image{
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  overflow: hidden;
+}
+.course-detilas__mobile__teacher-profile__img{
+  width: 100%;
+  height: 100%;
+}
+.course-detilas__mobile__teacher-profile__left{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.course-detilas__mobile__teacher-profile__title{
+  color: var(--text-color);
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.course-detilas__mobile__teacher-profile__subtitle{
+  font-size: 1.5rem;
+  color: var(--subtitle-color);
+}
+.course-detials__mobile__teacher-profile__bottom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.course-detilas__mobile__teacher-profile__see-teacher,
+.course-detilas__mobile__teacher-profile__bottom-icon{
+  color: var(--subtitle-color);
+}
+/*== Finish Course Details Mobile Teacher Profile ==*/
+/*===============================       Start Main And Containers Styles        ============================*/
+.main {
+  margin: 15rem 0 7.5rem 0;
+}
+
+.part {
+  margin-top: 7rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  /* border: 5px solid red; */
+  margin-top: 10rem;
+
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.part__right {
+  flex-grow: 3;
+  /* border: 2px solid #1100ff; */
+  /* min-width: 78rem; */
+  max-width: 92.5rem;
+}
+.part__left {
+  position: sticky;
+  top: 0;
+  flex-grow: 1;
+  /* border: 2px solid #fffb00; */
+  max-width: 32rem;
+  min-width: 25.5rem;
+  position: sticky;
+  top: 4rem;
+  height: max-content;
+}
+/*===============================       Finish Main Styles        ============================*/
+
+
+
+
+
+
+
+/*===============================       Start Sessions Styles        ============================*/
+.accordion-body.course-details__seasson__body {
+  padding: 0;
+}
+.course-sessions::-webkit-scrollbar{
+  width: 0.45rem;
+}
+.course-sessions{
+  height: 50rem ;
+  overflow-y: auto;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  background-color: var(--swiper-bg-color);
+  border: 0.25rem solid var(--topBar-bg-color);
+}
+.course-details__seassons {
+  height: 50rem !important;
+  margin: 8rem 0 3rem 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: transparent;
+  overflow-y : auto
+}
+.course-details__seasson {
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+  overflow: hidden;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #4e81fb;
+  box-shadow: 0px 0px 10px 0px #00ff2a46;
+}
+
+/* course-details__seasson__header */
+.course-details__seasson__header-link {
+  background-color: var(--swiper-bg-color) !important;
+  color: var(--text-color) !important;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 2rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.course-details__seasson__header-link::after {
+  content: none;
+}
+.course-details__header-icon {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transition: 400ms;
+  -webkit-transition: 400ms;
+  -moz-transition: 400ms;
+  -ms-transition: 400ms;
+  -o-transition: 400ms;
+}
+.course-details__seasson__header-link.collapsed .course-details__header-icon {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+}
+.course-details__seasson__body {
+  background-color: var(--topBar-bg-color);
+}
+.course-details__seasson__part {
+  padding: 0.8rem 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.course-details__seasson__part:not(:last-child) {
+  border-bottom: 2px solid gold;
+}
+
+.course-details__seasson__part-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+.course-details__seasson__part-count {
+  width: 4rem;
+  height: 3rem;
+  font-size: 1.4rem;
+  border: 2.5px solid var(--green-color);
+  color: var(--subtitle-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.course-details__seasson__part-icon {
+  color: var(--subtitle-color);
+  font-size: 1.5rem;
+}
+.course-details__seasson__part-title {
+  font-size: 1.25rem;
+  color: var(--text-color);
+}
+.course-details__seasson__part-title:hover {
+  color: var(--subtitle-color);
+}
+.course-details__seasson__part-left {
+  color: var(--subtitle-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 1.2rem;
+}
+/*===============================       Finish Sessions Styles        ============================*/
+
+
+
+
+/*===============================       Start Course Status Item Styles        ============================*/
+.course-status{
+  margin-top: 7.5rem;
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.65rem;
+  -webkit-border-radius: 0.65rem;
+  -moz-border-radius: 0.65rem;
+  -ms-border-radius: 0.65rem;
+  -o-border-radius: 0.65rem;
+}
+.course-status__item{
+  background-color: var(--swiper-bg-color);
+  border-radius: 0.7rem;
+  border: 1px solid var(--topBar-bg-color);
+  border-bottom: 0.4rem solid var(--green-color);
+  -webkit-border-radius: 0.7rem;
+  -moz-border-radius: 0.7rem;
+  -ms-border-radius: 0.7rem;
+  -o-border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.5rem 0.7rem;
+  flex-grow: 1;
+}
+.course-status__icon{
+  color: var(--green-color);
+  font-size: 2rem;
+}
+.course-status__value{
+  text-align: center;
+  margin-top: 0.4rem;
+}
+.course-status__title{
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--subtitle-color);
+}
+/*===============================       Finish Course Status Item Styles        ============================*/
+
+
+
+
+/*===============================       Start Course Teacher Infos Styles        ============================*/
+.course-teacher{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--topBar-bg-color);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  border-bottom: 0.4rem solid var(--green-color);
+  padding: 1.5rem 0.5rem;
+  margin-top: 5rem;
+}
+.course-teacher__image-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+}
+.course-teacher__img{
+  width: 10rem;
+  height: 10rem;
+  border-radius:50%;
+  -webkit-border-radius:50% ;
+  -moz-border-radius:50% ;
+  -ms-border-radius:50% ;
+  -o-border-radius:50% ;
+
+}
+.course-teacher__name{
+  font-size: 2rem;
+  line-height: 3rem;
+  
+}
+.course-teacher__link{
+  font-size: 1.3rem;
+  color: var(--subtitle-color);
+}
+.course-teacher__description{
+  font-size: 1.45rem;
+  color: var(--subtitle-color);
+  line-height: 2.5rem;
+}
+/*===============================       Finish Course Teacher Infos Styles        ============================*/
+
+
+/*===============================       Start Part Infos Styles        ============================*/
+.part-info{
+  width: 100%;
+  padding: 4rem 1.8rem 3rem 1.8rem;
+  background-color: var(--topBar-bg-color);
+  margin-bottom: 5rem;
+  border-radius: 1rem;
+
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+.part-info__course-name{
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+  position: relative;
+  line-height: 3rem;
+  padding-right: 2rem;
+}
+.part-info__course-name::before{
+  content: '';
+  height: 150%;
+  width: 1rem;
+  background-color: #fbbf24;
+  position: absolute;
+  right: 0;
+  border-radius: 1.25px;
+  -webkit-border-radius: 1.25px;
+  -moz-border-radius: 1.25px;
+  -ms-border-radius: 1.25px;
+  -o-border-radius: 1.25px;
+}
+.part-info__video{
+  margin-top: 2.5rem;
+  width: 100%;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+.part-info__details{
+  color : var(--subtitle-color);
+  margin-top : 2rem;
+  font-size: 1.8rem;
+  display: flex;
+  gap: 2rem;
+  font-size: 2.2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #b9b9b9;
+}
+.part-info__details__part-count,
+.part-inof__details__part-name{
+  color: var(--text-color);
+  font-size: 1.8rem;
+}
+/*===============================       Finish Part Infos Styles        ============================*/
+
+
+
+
+/*===============================       Finish Part Infos Styles        ============================*/
+.part-question{
+  width: 100%;
+  background-color: var(--swiper-bg-color);
+
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+
+  padding: 3rem 1.8rem;
+}
+.part-question__title{
+  font-size: 3rem;
+  line-height: 3rem;
+  padding-right: 2rem;  
+  position: relative;
+  display: block;
+}
+.part-question__title::before{
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 1rem;
+  height: 150%;
+  right: 0;
+  background-color: var(--green-color);
+  border-radius: 1.25px;
+  -webkit-border-radius: 1.25px;
+  -moz-border-radius: 1.25px;
+  -ms-border-radius: 1.25px;
+  -o-border-radius: 1.25px;
+}
+.part-question__user-info{
+  margin-top: 3rem;
+  display: flex;
+  gap: 1.5rem;
+  padding-right: 1rem;
+}
+/* .part-question__user-info__right */
+.part-question__user-info__img{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 1px solid gray;
+}
+.part-question__user-info__left{
+  display: flex;
+  flex-direction: column;
+  height: 4rem;
+  justify-content: space-between;
+}
+/* .part-question__user-info__name */
+.part-question__part-question__subtitle{
+  font-size: 1.4rem;
+  color: var(--subtitle-color);
+}
+.part-question__input{
+  width: 100%;
+  min-height: 20rem;
+  background-color: var(--topBar-bg-color);
+  border-radius: 0.5rem;
+  margin-top: 3.5rem;
+  border: none;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  padding: 2rem 1rem;
+  outline: none;
+  color: white;
+}
+.part-question__input::placeholder{
+  color: var(--subtitle-color);
+}
+
+.part-question__footer{
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid gray;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+/* .part-question__footer-right */
+.part-question__footer-btn {
+  padding: 1rem 3rem;
+  color: white;
+  border-radius: 0.75rem;
+  -webkit-border-radius: 0.75rem;
+  -moz-border-radius: 0.75rem;
+  -ms-border-radius: 0.75rem;
+  -o-border-radius: 0.75rem;
+
+  background-color: var(--topBar-bg-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+
+}
+.attachment-btn{
+  color: var(--subtitle-color);
+}
+/* .part-question__footer-left */
+/* .clear-btn */
+.send-btn{
+  background-color: var(--green-color);
+}
+/*===============================       Finish Part Infos Styles        ============================*/
+
+

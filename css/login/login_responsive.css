@@ -1,0 +1,72 @@
+/* @media screen and (max-width : 1550px) {
+    
+}
+@media screen and (max-width : 1400px) {
+    
+}
+@media screen and (max-width : 1200px) {
+    
+}
+@media screen and (max-width : 1100px) {
+    
+
+} 
+@media screen and (max-width : 992px) {
+    
+}
+
+
+
+@media screen and (max-width : 768px) {
+
+}
+
+*/
+@media screen and (max-width : 576px) {
+    .login-register{
+        width: 100%;
+        
+    }
+    .form{
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+/*
+@media screen and (max-width : 480px) {
+
+}
+
+*/
+@media screen and (max-width : 450px) {
+    .form__nav__text,
+    .form__nav__link,
+    .form__pass-setting__remember-me__text,
+    .form__pass-setting__froget-pass{
+        font-size: 1.4rem;
+    }
+    .form-des-item{
+        font-size: 0.8rem;
+    }
+}
+
+
+@media screen and (max-width : 390px) {
+    .form__pass-setting__remember-me__text,
+    .form__pass-setting__froget-pass{
+        font-size: 1.18rem;
+    }
+    .form__pass-setting{
+        padding: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.2rem;
+    }
+    
+    .form__pass-setting__froget-pass{
+        align-self: flex-end;
+    }
+}
+
+

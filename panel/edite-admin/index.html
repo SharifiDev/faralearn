@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="vendor/swiperSlider/swiper.css" />
+    <link rel="stylesheet" href="vendor/BootStrap/Bootstrap5.min.css">
+    <link rel="stylesheet" href="vendor/SweetAlert2/sweet-alert_2.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="loading-container">
+        <span class="loader"></span>
+    </div>
+
+    <div id="content">
+        <div id="sidebar" class="col-2">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">
+                    <a href="#"><img src="img/logo.png" alt="Logo"></a>
+                </div>
+
+                <div class="sidebar-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div class="sidebar-menu">
+                <ul>
+                    <li class="active-menu"><a href="../main"><span>صفحه اصلی</span></a></li>
+                    <li><a href="../courses"><span>دوره ها</span></a></li>
+                    <li><a href="../menus"><span>منو ها</span></a></li>
+                    <li><a href="../users"><span>کاربران</span></a></li>
+                    <li><a href="../categories"><span>دسته‌بندی‌ها</span></a></li>
+                    <li><a href="../contacts"><span>پیغام ها ی ارتباطی</span></a></li>
+                    <li><a href="../sessions/"><span>جلسات</span></a></li>
+                    <li><a href="../articles/"><span>مقاله ها</span></a></li>
+                    <li><a href="../comments"><span>کامنت ها</span></a></li>   
+                    <li><a href="../discounts/"><span>کد های تخفیف</span></a></li>   
+                    <li><a href="../campaign/"><span>کمپین</span></a></li>  
+                    <li><a href="../tickets/"><span>تیکت ها</span></a></li>
+                    <li><a id="logout-btn"><span>خروج</span></a></li> 
+                </ul>
+            </div>
+        </div>
+        <div id="home" class="col-10">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="home-header">
+                        <div class="home-right">
+                            <div class="home-searchbar">
+                                <input type="text" class="search-bar" placeholder="جستجو...">
+                            </div>
+                            <div class="home-notification">
+                                <button type="button" id="notification-icon">
+                                    <i class="far fa-bell"></i>
+                                </button>
+                            </div>
+                            <div class="home-notification-modal" id="notification-modal">
+                                <ul class="home-notification-modal-list" id="notification-modal-list">
+                                    
+                                </ul>
+                            </div>
+                            <div class="mode">
+                                <ul class="mode-list">
+                                    <div class="mode-list-item mode-red"></div>
+                                    <div class="mode-list-item mode-blue"></div>
+                                    <div class="mode-list-item mode-dark"></div>
+                                    <div class="mode-list-item mode-light"></div>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="home-left">
+                            <div class="home-profile">
+                                <div class="home-profile-image">
+                                    <a href="#">
+                                        <img id="admin-img" alt="">
+                                    </a>
+                                </div>
+                                <div class="home-profile-name">
+                                    <a href="../edite-admin/" id="admin-name"></a>
+                                </div>
+                                <div class="home-profile-icon">
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" id="home-content">
+                <div class="container">
+                    <div class="home-title">
+                        <span>ویرایش اطلاعات</span>
+                    </div>
+                    <div class="form">
+                        <div class="col-6">
+                            <div class="name input">
+                                <label class="input-title" style="display: block;">نام و نام خانوادگی</label>
+                                <input type="text" placeholder="لطفا فیلد هارا پر کنید..." id="name">
+                                <span class="error-message text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="name input">
+                                <label class="input-title" style="display: block;">نام کاربری</label>
+                                <input type="text" placeholder="لطفا فیلد هارا پر کنید..." id="username">
+                                <span class="error-message text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="name input">
+                                <label class="input-title" style="display: block;">رمز عبور</label>
+                                <input type="text" placeholder="لطفا فیلد هارا پر کنید..." id="password">
+                                <span class="error-message text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="name input">
+                                <label class="input-title" style="display: block;">ایمیل</label>
+                                <input type="text" placeholder="لطفا فیلد هارا پر کنید..." id="email">
+                                <span class="error-message text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="name input">
+                                <label class="input-title" style="display: block;">شماره تلفن</label>
+                                <input type="text" placeholder="لطفا فیلد هارا پر کنید..." id="phone">
+                                <span class="error-message text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="name input">
+                                <label class="input-title" style="display: block;">مسیر پروفایل</label>
+                                <input type="text" id="profile" required>
+                                <span class="error-message text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="bottom-form">
+                                <div class="submit-btn">
+                                    <input type="submit" value="ویرایش" onclick="updateAdminInfo()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="vendor/swiperSlider/swiper.js"></script>
+    <script src="vendor/SweetAlert2/sweet-alert_2.js"></script>
+    <script type="module" src="js/custom.js"></script>
+    <script type="module" src="../../js/panel/shared-app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+@import url(../../components/loader/loader.css);
+@import url(../default.css);
+@import url(../../components/topbar/topbar.css);
+@import url(../../components/navbar/navbar.css);
+@import url(../../components//mobileNav/mbileNav.css);
+@import url(../../components/course-box/course-box.css);
+@import url(../../components/article-box/article-box.css);
+@import url(../../components/footer/footer.css);
+@import url(../helper-class.css);
+@import url(../../css/container.css);
+
+.main{
+    margin: 12rem 0 7.5rem 0;
+}
+
+
+/*===============================       Start Lates Courses  Styles        ============================*/
+.lates-courses{
+    width: 100%;
+    height: max-content;
+}
+
+/*======  Start Lates-Courses Header Styles =====*/
+.lates-courses__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width : 100%;
+    overflow: hidden;
+}
+
+  .lates-courses__header-right{} /*Empty*/
+
+    .lates-courses__header-title{
+        display: flex;
+        align-items: center;
+    }
+    .lates-courses__header-text{
+        color: var(--subtitle-color);
+    }
+
+  /* lates-courses__header-left */
+    /* lates-courses__header-button */
+    /* lates-courses__header-icon */
+/*======  Finish Lates-Courses Header Styles =====*/
+
+
+
+/*======  Start Lates-Courses Main  And Course-box Style Styles =====*/
+.lates-course__main{
+    width: 100%;
+    height: max-content;
+}
+.lates-course__main .container{
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    width: 100%;
+    justify-content: center;
+    
+    
+}
+/*======  Finsih Lates-Courses Main Styles =====*/
+/*===============================       Finish Lates Courses  Styles        ============================*/
+
+
+
+
+
+
+
+/*===============================       Start Lates Article Styles        ============================*/
+/* lates-articles */
+
+/*======  Start Articles Header  Main Styles =====*/
+.lates-articles__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+  .articles__header-right{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+    /* lates-artivle__title */
+    .lates-courses__subtitle{
+        color: var(--subtitle-color);
+    }
+
+  /* article__header-left
+    article__header-btn
+    article__header-icon */
+/*======  Finsih Articles Header  Main Styles =====*/
+
+
+/*======  Start Articles Main  Main Styles =====*/
+.lates-articles__main{
+    width: 100%;
+    height: max-content;
+    padding: 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    /* padding: 1rem; */
+}
+
+
+/*======  Finsih Articles Main  Main Styles =====*/
+/*===============================       Finish Lates Article Styles        ============================*/

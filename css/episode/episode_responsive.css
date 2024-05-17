@@ -1,0 +1,94 @@
+
+@media screen and (max-width : 1316px) {
+    
+}
+@media screen and (max-width : 1000px) {
+    .part__right{
+        min-width: 47.5rem;
+    }
+}
+
+@media screen and (max-width : 811px) {
+    .part__left{
+        display: none;
+    }
+    .mobile-sidebar{
+        display: block;
+    }
+    .part__right{
+        width: 100%;
+        min-width: unset;
+    }
+}
+@media screen and (max-width : 760px) {
+    
+}
+
+@media screen and (max-width : 536px) {
+    .part-info{
+        padding: 2rem 0.5rem 1.5rem 0.5rem;
+    }
+
+    .part-info__course-name{
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+
+    .part-inof__details__part-name,
+    .part-info__details__part-count{
+        font-size: 1.5rem;
+    }
+
+    .course-details__seasson__part-icon{
+        font-size: 1.5rem;
+    }
+    .course-details__seasson__part-title{
+        font-size : 1.5rem
+    }
+    .accordion-body.course-details__seasson__body{
+        padding: 0.5rem;
+    }
+    .course-details__seasson__part{
+        padding: 0;
+    }
+    .accordion-button.course-details__seasson__header-link{
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width : 440px) {
+    
+    .course-details__seasson__part-right{
+        gap: 0.9rem;
+    }
+    .course-details__seasson__part-count{
+        width: 4rem;
+        height: 4rem;
+        font-size: 1.45rem;
+    }
+
+    .course-details__seasson__part-left,
+    .course-details__seasson__part-title{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width : 384px) {
+    
+    .breadcrumb__link{
+        font-size: 1rem;
+    }
+
+    
+
+    .course-details__seasson__part-right{
+        gap: 0.5rem;
+    }
+    .course-details__seasson__part-left,
+    .course-details__seasson__part-title{
+        font-size: 1.18rem;
+    }
+    .part-question__footer-left{
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+}

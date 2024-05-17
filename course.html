@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جزئیات دوره</title>
+
+    <!-- Bootstrap Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ 
+    <!-- fontAwesome library Icons Styles -->
+    <link rel="stylesheet" href="./vendor/fontAwesome/fontAwesome.css">
+
+    <!-- Reset Engine Default Styles -->
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./css/fonts.css">
+
+    <!-- Variables Styles -->
+    <link rel="stylesheet" href="./css/variables.css">
+
+    
+    
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="./css/course/course.css">
+
+    <!-- Responsive Styles -->
+    <link rel="stylesheet" href="./css/course/course_responsive.css">
+
+</head>
+<body>
+    <div class="loading-container">
+        <span class="loader"></span>
+    </div>
+
+    <header class="header">
+        <top-bar></top-bar>
+
+        <mobile-nav></mobile-nav>
+
+        <nav-bar></nav-bar>
+    </header>
+
+
+    <main class="main">
+        <div class="container" id="main-container">
+
+            <bread-crumb></bread-crumb>
+
+            <section class="course-info">
+                <div class="course-info__right">
+                    <a class="course-info__link" id="course-category-link">
+                        <!-- Load From JS -->
+                    </a>
+                    <span class="course-info__title" id="course-name">
+                        <!-- Load From JS -->
+                    </span>
+                    <p class="course-info__description" id="course-description">
+                        <!-- Load From JS -->
+                    </p>
+                    <div class="course-info__social-media">
+                        <a href="#" class="course-info__social-media-item">
+                          <i class="fab fa-telegram-plane course-info__icon"></i>
+                        </a>
+                        <a href="#" class="course-info__social-media-item">
+                          <i class="fab fa-twitter course-info__icon"></i>
+                        </a>
+                        <a href="#" class="course-info__social-media-item">
+                          <i class="fab fa-facebook-f course-info__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="course-left">
+                    <video controls class="course-info__video" id="course-introduction-video"></video>
+                </div>
+            </section>
+
+            <section class="course-details">
+                <div class="course-details__right">
+
+                    
+                    <div class="course-details__boxes">
+                        <!-- <div class="course-details__boxes-row">
+                        </div>
+                        <div class="course-details__boxes-row">
+                        </div> -->
+
+                        <div class="course-details__box">
+                            <div class="course-details__box-right">
+                                <i class="fas fa-graduation-cap course-details__box-icon"></i>
+                            </div>
+                            <div class="course-details__box-left">
+                                <span class="course-details__box-title">وضعیت دوره:</span>
+                                <span class="course-details__box-subtitle" id="course-status"></span>
+                            </div>
+                        </div>
+    
+                        <div class="course-details__box">
+                            <div class="course-details__box-right">
+                                <i class="fas fa-clock course-details__box-icon"></i>
+                            </div>
+                            <div class="course-details__box-left">
+                                <span class="course-details__box-title">مدت زمان دوره:</span>
+                                <span class="course-details__box-subtitle" id="course-time"></span>
+                            </div>
+                        </div>
+    
+                        <div class="course-details__box">
+                            <div class="course-details__box-right">
+                                <i class="fas fa-calendar-alt course-details__box-icon"></i>
+                            </div>
+                            <div class="course-details__box-left">
+                                <span class="course-details__box-title">آخرین بروزرسانی:</span>
+                                <span class="course-details__box-subtitle" id="course-lastupdate"></span>
+                            </div>
+                        </div>
+
+                        <div class="course-details__box">
+                            <div class="course-details__box-right">
+                                <i class="fas fa-user-alt course-details__box-icon"></i>
+                            </div>
+                            <div class="course-details__box-left">
+                                <span class="course-details__box-title">روش پشتیبانی</span>
+                                <span class="course-details__box-subtitle" id="course-support"></span>
+                            </div>
+                        </div>
+    
+                        <div class="course-details__box">
+                            <div class="course-details__box-right">
+                                <i class="fas fa-info-circle course-details__box-icon"></i>
+                            </div>
+                            <div class="course-details__box-left">
+                                <span class="course-details__box-title">پیش نیاز:</span>
+                                <span class="course-details__box-subtitle">بدون پیش نیاز</span>
+                            </div>
+                        </div>
+    
+                        <div class="course-details__box">
+                            <div class="course-details__box-right">
+                                <i class="fas fa-play course-details__box-icon"></i>
+                            </div>
+                            <div class="course-details__box-left">
+                                <span class="course-details__box-title">نوع مشاهده:</span>
+                                <span class="course-details__box-subtitle">ضبط شده / آنلاین</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="course-details__progress">
+
+                        <div class="course-details__points progress-point">
+                            <div class="course-details__points__item">
+                                <div class="course-details__points__item-right">
+                                    <i class="fas fa-star star course-details__points__item-icon"></i>
+                                </div>
+
+                                <div class="course-details__points__item-left">
+                                    <span class="course-details__points__item-title">5.0</span>
+                                    <span class="course-details__points__item-subtitle">رضایت</span>
+                                </div>
+                            </div>
+
+                            <div class="course-details__points__item">
+                                <div class="course-details__points__item-right">
+                                    <i class="fas fa-user-graduate course-details__points__item-icon"></i>
+                                </div>
+
+                                <div class="course-details__points__item-left">
+                                    <span class="course-details__points__item-title course-students"></span>
+                                    <span class="course-details__points__item-subtitle">دانشجوها</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-details__progress__header">
+                            <i class="fas fa-chart-line course-details__progress__header-icon"></i>
+                            <span class="course-details__progress__header-title">درصد پیشرفت دوره : 100%</span>
+                        </div>
+                        
+                        <div class="progress course-details__progress__bar">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated course-details__progress__line" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                        </div>
+                    </div>
+
+                    <div class="course-detilas__mobile__teacher-profile">
+                        <div class="course-detials__mobile__teacher-profile__top">
+                            <div class="course-detilas__mobile__teacher-profile__right">
+                                <div class="course-detilas__mobile__teacher-profile__image">
+                                    <img alt="teacher-profile" class="course-detilas__mobile__teacher-profile__img teacher-img">
+                                </div>
+                            </div>
+
+                            <div class="course-detilas__mobile__teacher-profile__left">
+                                <span class="course-detilas__mobile__teacher-profile__title teacher-name"></span>
+                                <span class="course-detilas__mobile__teacher-profile__subtitle">Front End Developer</span>
+                            </div>
+                        </div>
+
+                        <div class="course-detials__mobile__teacher-profile__bottom">
+                            <span class="course-detilas__mobile__teacher-profile__see-teacher">مشاهده پروفایل</span>
+                            <i class="fas fa-chalkboard-teacher course-detilas__mobile__teacher-profile__bottom-icon"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="course-details__introduction">
+                        <div class="course-details__introduction-item" id="introduction__first-item">
+                            <span class="course-details__introduction-title section-title">نست جی اس (NestJS) چیست؟</span>
+                            <img src="./images/info/nest/nest2.avif" alt="nestJS" class="course-details__introduction-img">
+
+                            <p class="course-details__introduction-text">
+                                نست جی اس (NestJS) یک فریمورک برای نود جی اس (NodeJS) است  که با استفاده از این فریمورک، شما میتوانید برنامه های مقیاس پذیر در سطح بالا را در چارچوبی مشخص و ساختاری بسیار منظم و مناسب توسعه بدید.
+                            </p>
+                        </div>
+
+                        <div class="course-details__introduction-item">
+                            <span class="course-details__introduction-title section-title">چرا نست جی اس (NestJS) ؟</span>
+                            <img src="./images/info/nest/nest1.jpg" alt="nestJS" class="course-details__introduction-img">
+
+                            <p class="course-details__introduction-text">
+                                نست جی اس از بهترین و قدرتمند ترین فریمورک های حال حاضر در توسعه ی بک اند میباشد که بازار کار خوب و عالی رو به خودش اختصاص داده در اکثر آگهی های استخدامی نود جی اس (NodeJS)، بلد بودن این فریمورک جزو مهارت های اصلی یا امتیازی محسوب میشود در این فریمورک شما با کمترین زمان و کد نویسی نسبت به بقیه ی فریمورک های نود جی اس (NodeJS) میتوانید برنامه هایی با مقیاس بالا توسعه دهید، همچنین کسانی که بر این فریمورک مسلط هستند شانس بیشتری نسبت به دیگر توسعه دهندگان نود جی اس (NodeJS) برای تصاحب شغل یا پروژه دارند و جزو مهارت های تخصصی و امتیازی هر رزومه میباشد.
+                            </p>
+
+                            <p class="course-details__introduction-text">
+                                فریمورک نست جی اس (NestJS) عناصری را از فریمورک های انگولار (Angular) ، اکسپرس جی اس (ExpressJS) و فستیفای (Fastify) به ارث برده که در واقع ساختاری شبیه به انگولار دارد و در هسته ی داخلی خود به طور پیش فرض از اکسپرس جی اس (ExpressJS) برای توسعه ی بک اند استفاده میکند که با تغییر کانفیگ ها و تنظیمات میتواند بجای اکسپرس از فریمورک فستیفای (Fastify) برای توسعه ی بک اند استفاده کند.
+                            </p>
+                        </div>
+
+                        <div class="course-details__introduction-overly">
+                            <button class="course-detilas__introduction-btn section__header-btn">مشاهده بیشتر
+                                <i class="fas fa-angle-down course-detilas__introduction-icon"></i>
+                            </button>
+
+                        </div>
+                            
+                    </div>
+                    
+                    <div class="download-btns">
+                        <button class="download-videos-btn download-btn">دانلود ویدئو ها</button>
+                        <button class="download-attachments-btn download-btn">دانلود پیوست ها</button>
+                    </div>
+
+                    <div class="accordion course-details__seassons course-sessions" id="accordionExample">
+                        <!-- Loaded From JS -->
+                    </div>
+                    
+
+                    <div class="comments">
+                        <div class="comments__header">
+                            <span class="comments__title">نظرات
+                                <i class="fab fa-discourse comments__title-icon"></i>
+                            </span>
+                            <span class="comments__create-btn" id="contact-title">ثبت نظر جدید</span>
+                        </div>
+
+                        <div class="comments__add-comment" id="add-parent">
+                            <div class="comments__add-comment__header">
+                                <div class="comments__add-comment__header-right">
+                                    <img alt="" class="comments__add-comment__header-img">
+                                </div>
+
+                                <div class="comments__add-comment__header-left">
+                                    <span class="comments__add-comment__header-name"></span>
+                                    <span class="comments__add-comment__header-subtitle">ثبت نظر جدید</span>
+                                </div>
+                            </div>
+
+                            <textarea class="comments__add-comment__input" id="comment-input" placeholder="نظر خود را بنویسید..."></textarea>
+
+                            <div class="comments__add-comment__footer">
+                                <div class="comments__add-comment__set-score" id="course-score-wrapper">
+                                    امتیازی که به دوره میدهید :
+                                    <input type="number" class="comments__add-comment__set-score__num" value="5" max="5" min="0" id="course-score-input"></input>
+                                </div>
+                                
+                                <div class="comments__add-comment__footer__btns">
+                                    <button type="button" class="comments__add-comment__btn cancle-btn">لغو</button>
+                                    <button type="button" class="comments__add-comment__btn send-btn">ثبت</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comments__wrapper" id="comments-wrapper">
+                            <!-- Loaded From JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="course-details__left">
+                    <div class="course-details__reigster">
+                        <button class="course-details__register__button" id="user-status-btn">
+                            <i class="fas fa-user-graduate course-details__register__icon"></i>
+                            <!-- Loaded From JS -->
+                        </button>
+                    </div>
+
+                    <div class="course-details__points">
+                        <div class="course-details__points__item">
+                            <div class="course-details__points__item-right">
+                                <i class="fas fa-star star course-details__points__item-icon"></i>
+                            </div>
+
+                            <div class="course-details__points__item-left">
+                                <span class="course-details__points__item-title" id="course-score">5.0</span>
+                                <span class="course-details__points__item-subtitle">رضایت</span>
+                            </div>
+                        </div>
+
+                        <div class="course-details__points__item">
+                            <div class="course-details__points__item-right">
+                                <i class="fas fa-user-graduate course-details__points__item-icon"></i>
+                            </div>
+
+                            <div class="course-details__points__item-left">
+                                <span class="course-details__points__item-title course-students"></span>
+                                <span class="course-details__points__item-subtitle">دانشجوها</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="course-details__aside__teacher-profile">
+                        <div class="course-details__aside__teacher-profile__image">
+                            <img alt="teacher-profile" class="course-details__aside__teacher-profile__img teacher-img">
+                        </div>
+
+                        <div class="course-details__aside__teacher-profile__header">
+                            <span class="course-details__aside__teacher-profile__title teacher-name"></span>
+                            <span class="course-details__aside__teacher-profile__subtitle">
+                                مدرس دوره
+                                <i class="fas fa-chalkboard-teacher course-details__aside__teacher-profile__icon"></i>
+                            </span>
+                        </div>
+
+                        <div class="course-details__aside__teacher-profile__description">
+                            <p class="course-details__aside__teacher-profile__description-text">
+                                
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="course-details__short-link">
+                        <div class="course-details__short-link__header">
+                            <i class="fas fa-link course-details__short-link__icon"></i>
+                            لینک کوتاه
+                        </div>
+
+                        <div class="course-details__short-link__url">
+                            <p class="course-details__short-link__url-text">
+                                https//asancode.ir/course/nestjs
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="aside-products">
+                        <span class="aside-products__title">محصولات مرتبط</span>
+
+                        <ul class="aside-products__list">
+                         <!-- Loaded From JS -->
+                        </ul>
+                    </div>
+                </aside>
+            </section>
+
+        </div>
+    </main>
+    
+    <web-footer></web-footer>
+
+    <!-- Coutome Elements Definer -->
+    <script type="module" src="./js/costomElemntsDefiner.js"></script>
+
+    <!-- FontAwsome Lib Scripts -->
+    <script src="./vendor/fontAwesome/fontAwesome.js"></script>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- SweetAlert Lib Scripts -->
+    <script src="./vendor/SweetAlert2/sweet-alert_2.js"></script>
+
+     <!-- Shared Items Between All Pages -->
+     <script src="./js/funcs/shared.js" type="module"></script>
+
+    <!-- Main Scripts -->
+    <script type="module" src="./js/course-pg/course-app.js" defer></script>
+
+    <!-- Shared Scripts -->
+    <script type="module" src="./js/shared-app.js" defer></script>
+</body>
+</html>

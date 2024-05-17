@@ -1,0 +1,257 @@
+/*======  Start Navbar Styles =====*/
+nav-bar{
+    width: 100%;
+    height: 10rem;
+    position: fixed;
+    z-index: 4;
+
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 0 2.4rem;
+
+    background-color: var(--navbar-A-bg-color);
+    
+    
+    backdrop-filter: blur(1rem);
+}
+
+  .navbar__menu-button{
+    display: none;
+    width: 6rem;
+    height: 6rem;
+    cursor: pointer;
+    
+    
+  }
+  .navbar__menu-button svg{
+    width: 100%;
+    height: 100%;
+    fill: var(--text-color);
+  }
+
+
+  .navbar__center-logo{
+    display: none;
+  }
+
+    .navbar__center-logo-text{/*Empty*/
+        
+    }
+
+
+  .navbar__right-container{
+    display: flex;
+    align-items: center;
+    gap: 7.5rem;
+  }
+
+    .navbar__log{
+        font-size: 6rem;
+        cursor: pointer;
+    }
+
+        .navbar__logo-text{
+            color: transparent;
+            background: linear-gradient(45deg,var(--green-color),var(--green-color), var(--green-color),var(--navBar-bg-color),
+              var(--green-color),var(--green-color),var(--green-color), var(--navBar-bg-color),
+              var(--green-color),var(--green-color), var(--green-color),var(--navBar-bg-color),
+              var(--green-color),var(--green-color), var(--green-color),var(--navBar-bg-color));
+            background-size: 800%;
+            animation: logo-anim 40s linear infinite;
+            -webkit-animation: logo-anim 40s linear infinite;
+            -webkit-background-clip: text;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 6rem;
+            font-size: 6rem;
+        }
+
+
+    .navbar__menu{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+        .navbar__item{ 
+            position: relative;
+        }
+
+            .navbar__link{ /*Empty*/
+
+            }
+
+    
+    .navbar__dropdown-menu{
+        display: none;
+        
+        position: absolute;
+        top: 2.2rem;
+        right: 0;
+        background-color: var(--them-color);
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+        
+        flex-direction: column;
+        gap: 1.5rem;
+        z-index: 1;
+        padding: 1.5rem 1rem 2.5rem 4rem;
+        box-shadow: 0px 0px 20px 2px #ffffff41;
+        border-bottom: 2px solid var(--green-color);
+    }
+    .navbar__item:hover > .navbar__dropdown-menu{
+        display: flex;
+    }
+    .navbar__item:hover .fa-angle-down{
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+}
+
+        .navbar__dropdown-item:hover{ /*Empty*/
+            padding-right: 1rem;
+        }
+
+            .navbar__dropdown-link{ /*Empty*/
+
+            }
+
+
+
+  .navbar__left-container{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+    .navbar__search-btn{
+        background-color: var(--green-color);
+        font-size: 1.8rem;
+        padding: 1rem 1.3rem;
+        border-radius: 0.6rem;
+        -webkit-border-radius: 0.6rem;
+        -moz-border-radius: 0.6rem;
+        -ms-border-radius: 0.6rem;
+        -o-border-radius: 0.6rem;
+}
+
+        .navbar__search-icon{/*Empty*/
+
+        }
+
+
+    .navbar__basket-btn{
+        background-color: #dddddd;
+        color: black;
+        padding: 1rem 1.3rem;
+        border-radius: 0.6rem;
+        -webkit-border-radius: 0.6rem;
+        -moz-border-radius: 0.6rem;
+        -ms-border-radius: 0.6rem;
+        -o-border-radius: 0.6rem;
+}
+
+        .navbar__basket-icon{/*Empty*/
+
+        }
+
+
+    .navbar__profile-btn{
+        padding: 1rem 0.5rem;
+        width: 12rem;
+        color: var(--text-color);
+        border: 0.26rem solid  var(--green-color);
+        border-radius: 0.8rem;
+        -webkit-border-radius: 0.8rem;
+        -moz-border-radius: 0.8rem;
+        -ms-border-radius: 0.8rem;
+        -o-border-radius: 0.8rem;
+        text-align: center;
+        line-height: 2rem;
+    }
+    .navbar__profile-btn:hover{
+        background-color: var(--green-color);
+        color: var(--text-color);
+        opacity: 1;
+        transition: 0.1s;
+        -webkit-transition: 0.1s;
+        -moz-transition: 0.1s;
+        -ms-transition: 0.1s;
+        -o-transition: 0.1s;
+    }
+
+        .navbar__prifile-text{
+            transition: 0s;
+            -webkit-transition: 0s;
+            -moz-transition: 0s;
+            -ms-transition: 0s;
+            -o-transition: 0s;
+        }
+@keyframes logo-anim {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 800% 0;
+    }
+}
+/*======  Finish Navbar Styles =====*/
+@media screen and (max-width : 1450px) {
+    .navbar{
+        padding: 0 0.85rem;
+    }
+    .navbar__logo-text{
+        padding-top: 10px;
+        font-size: 3rem;
+    }
+    .navbar__menu{
+        gap: 2rem;
+    }
+    .navbar__left-container {
+        gap: 0.5rem;
+    }
+}
+@media screen and (max-width : 1255px) {
+    .navbar__right-container,
+    .navbar__basket-btn,
+    .navbar__search-btn{
+        display: none;
+    }
+    .navbar__center-logo,
+    .navbar__menu-button{
+        display: block;
+    }
+
+    
+    
+    
+}
+
+@media screen and (max-width : 576px) {
+    .navbar__menu-button{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .navbar__profile-btn{
+        padding: 0.7rem 0.8rem;
+        font-size: 1.4rem;
+    }
+    .navbar__center-logo{
+        font-size: 4.5;
+    }
+    .navbar{
+        padding: 0 0.8rem;
+    }
+}

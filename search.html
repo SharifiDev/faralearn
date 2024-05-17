@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search</title>
+
+        <!-- Reset Engine Default Styles -->
+        <link rel="stylesheet" href="./css/reset.css">
+
+        <!-- AOS Library -->
+        <link rel="stylesheet" href="./vendor/AOS/AOS.css">
+
+        <!-- Sweeat Alert Library -->
+        <link rel="stylesheet" href="./vendor/SweetAlert2/sweet-alert_2.css">
+
+        <!-- fontAwesome library Icons Styles -->
+        <link rel="stylesheet" href="./vendor/fontAwesome/fontAwesome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="./css/fonts.css">
+
+        <!-- Variables Styles -->
+        <link rel="stylesheet" href="./css/variables.css">
+
+        <!-- Main Styles -->
+        <link rel="stylesheet" href="css/search/search.css">
+
+        <!-- Responsive Styles -->
+        <link rel="stylesheet" href="css/search/search_responsive.css">
+    </head>
+    <body>
+
+        <div class="loading-container">
+            <span class="loader"></span>
+        </div>
+
+        <header class="header">
+            <top-bar></top-bar>
+
+            <mobile-nav></mobile-nav>
+
+            <nav-bar></nav-bar>
+        </header>
+
+        <main class="main">
+            <section class="lates-courses">
+                <div class="lates-courses__header section-header">
+
+                    <div class="lates-courses__header-right">
+                        <span class="lates-courses__header-title section-title">نتیجه
+                            دوره ها</span>
+                    </div>
+
+                    <div class="lates-courses__header-left">
+                        <a href="category.html"
+                            class="lates-courses__header-btn section__header-btn">
+                            تمامی دوره ها
+                            <i
+                                class="fas fa-arrow-left lates-courses__header-icon section__header-icon"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="lates-course__main">
+                    <div class="container" id="courses-wrapper">
+                        <!-- Loaded From JS -->
+                    </div>
+                </div>
+
+            </section>
+
+
+            <section class="lates-articles">
+                <div class="lates-articles__header section-header">
+                    <div class="articles__header-right">
+                        <span class="lates-artivle__title section-title">نتیجه
+                            مقالات</span>
+                    </div>
+                    <div class="article__header-left">
+                        <a href class="article__header-btn section__header-btn">
+                            تمامی مقالات
+                            <i
+                                class="fas fa-arrow-left article__header-icon section__header-icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lates-articles__main" id="articles-wrapper">
+                    <!-- Loaded From JS -->
+                </div>
+            </section>
+        </main>
+
+        <web-footer></web-footer>
+
+        <!-- Coutome Elements Definer -->
+        <script type="module" src="./js/costomElemntsDefiner.js"></script>
+
+        <!-- Sweet Alert Lib Scripts -->
+        <script src="./vendor/SweetAlert2/sweet-alert_2.js"></script>
+
+        <!-- FontAwsome Lib Scripts -->
+        <script src="./vendor/fontAwesome/fontAwesome.js"></script>
+
+        <!-- AOS Lib Scripts -->
+        <script src="./vendor/AOS/AOS.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+        <!-- Main Script -->
+        <script type="module" src="./js/search-pg/search-app.js" defer></script>
+
+        <!-- Shared Scripts -->
+        <script type="module" src="./js/shared-app.js" defer></script>
+    </body>
+</html>

@@ -1,0 +1,207 @@
+.cart-even{
+    background : linear-gradient(to right bottom, #745eff, #e991ff);
+}
+.cart-even::before{
+    background : linear-gradient(to right bottom, #e991ff, #745eff)
+}
+
+.cart-odd{
+    background: linear-gradient(to left top, #de234e, #701837);
+}
+.cart-odd::before{
+    background: linear-gradient(to left top, #701837, #de234e);
+}
+course-box{
+    flex-grow: 1;
+    min-width: 38rem;
+    max-width: 4.2rem;
+    
+}
+.course-box{
+    cursor: pointer;
+    min-width: 100%;
+    max-width: 100%;
+    margin-top: 10rem;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    flex-direction: column;
+    
+    position: relative;
+}
+.course-box::before{
+    position: absolute;
+    content: '';
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+    z-index: 1;
+    box-shadow: 0px 0px 2rem 0.4rem var(--shadow-color);
+
+}
+.course-box:hover{
+    transform: translateY(-1.5rem);
+    -webkit-transform: translateY(-1.5rem);
+    -moz-transform: translateY(-1.5rem);
+    -ms-transform: translateY(-1.5rem);
+    -o-transform: translateY(-1.5rem);
+}
+.course-box:hover::before{
+    opacity: 0;
+}
+
+  .course-box__img-container{
+    z-index: 2;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border-radius: 0.8rem;
+    -webkit-border-radius: 0.8rem;
+    overflow: hidden;
+    -moz-border-radius: 0.8rem;
+    -ms-border-radius: 0.8rem;
+    -o-border-radius: 0.8rem;
+    top: -50%;
+}
+    .course-box__img:hover{
+        opacity: 1;
+    }
+        .course-img{
+            width: 100%;
+            height: 100%;
+        }/*Empty*/
+
+
+
+  .course-box__infos-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+
+  }
+    .course-box__main{
+        padding: 0 1rem;
+    }
+        .course-box__title{
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            line-height: 2rem;
+        }
+        .course-box__teacher-infos{
+            display: flex;
+        
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+            .course-box__teacher-name{
+                display: flex;
+                color: var(--subtitle-color);
+            }
+            .course-box__teacher-stars{
+                
+            }
+
+    .course-box__infos{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+    }
+        .course-box__students{
+            color: black;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+            .course-box__students-icon{}/*Empty*/
+            .course-box__students-count{}/*Empty*/
+
+        .course-box__price{
+            color: black;
+        }
+
+    .course-box__footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        padding: 1rem;
+        border-top: 1px solid #acacff;
+    }
+        .course-box__footer__button{
+            
+        }
+        .course-box__footer__button-icon{
+            
+        }
+
+
+
+
+.before-discount{
+    color: var(--subtitle-color);
+    text-decoration: line-through;
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+.discount{
+    color: var(--green-color);
+    font-size: 1.6rem;
+}
+
+.hide{
+    display: none;
+}
+
+
+.course-box__discount-label{
+    padding: 0.5rem 0.8rem;
+    background-color: var(--green-color);
+    color: var(--text-color);
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    position: absolute;
+    z-index: 2;
+    top: -0.2rem;
+    left: -3%;
+}
+
+.course-box:hover .course-box__discount-label{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+
+
+
+@media screen and (max-width: 400px) {
+    course-box{
+        min-width: 100%;
+        max-width: 100%;
+    }
+}

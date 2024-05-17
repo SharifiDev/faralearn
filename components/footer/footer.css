@@ -1,0 +1,213 @@
+Footer{
+    margin-top: 15rem;
+}
+/*======  Start Footer Widgets Styles =====*/
+.footer__widgets{
+    display: flex;
+    /* border: 2px solid  var(--green-color); */
+    box-shadow: 0px -0.5rem 2rem 2px var(--green-color);
+    padding: 5rem 2.5rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    background-color: var(--swiper-bg-color);
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 15rem ;
+}
+.footer__widgets::after{
+    content: '';
+    position: absolute;
+    height: 2rem;
+    width: 40%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    background-color: var(--green-color);
+    z-index: -1;
+    border-radius: 0 0 0.5rem 0.5rem;
+    -webkit-border-radius: 0 0 0.5rem 0.5rem;
+    transform: translateY(2rem);
+    -moz-border-radius: 0 0 0.5rem 0.5rem;
+    -ms-border-radius: 0 0 0.5rem 0.5rem;
+    -o-border-radius: 0 0 0.5rem 0.5rem;
+    -webkit-transform: translateY(2rem);
+    -moz-transform: translateY(2rem);
+    -ms-transform: translateY(2rem);
+    -o-transform: translateY(2rem);
+}
+.footer__widgets-item{
+   width: 30rem;
+    flex-grow: 1;
+    padding: 1rem;
+    margin-top: 3rem;
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-start;
+    gap: 1rem;
+    flex-direction: column;
+    z-index: 1;
+
+}
+.footer__widgets-title{
+    position: relative;
+    font-weight: bold;
+    color: var(--text-color);
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+.footer__widgets-title::before{
+    content: '';
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--green-color);
+    position: absolute;
+    right: 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    opacity: 0.8;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    z-index: -1;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.footer__widgets-title:hover::before{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+}
+.footer__widgets-text{
+    color: var(--subtitle-color);
+    line-height: 3rem;
+    font-size: 1.4rem;
+}
+.footer__widgets-links{
+    display: flex;
+    padding: 1rem 0;
+    gap: 2.5rem;
+    flex-direction: column;
+    
+}
+.footer__widgets-link{
+    line-height: 3rem;
+    color: var(--subtitle-color);
+    
+}
+.footer__widgets-link:hover{
+    color: var(--link-hover-color);
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+.part-links{
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+}
+.part-link{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+/*======  Finsih Footer Widgets Styles =====*/
+
+
+/*======  Start Footer News Letter Styles =====*/
+.footer__add-news-letter{
+    width: 100%;
+    margin-top: 3rem;
+}
+/* .footer__add-news-letter__title */
+.footer__add-news-letter__description{
+    margin-top: 2rem;
+    padding-right: 1rem;
+    line-height: 2rem;
+}
+.footer__add-news-letter__inputBox{
+    width: 100%;
+    height: 4rem;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+    overflow: hidden;
+    position: relative;
+    margin-top: 1.5rem;
+}
+.footer__add-news-letter__input{
+    width: 100%;
+    padding: 0.2rem 0.7rem;
+    background-color: var(--topBar-bg-color);
+    height: 100%;
+}
+.footer__add-news-letter__btn{
+    position: absolute;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+    color: var(--subtitle-color);
+    background-color: gray;
+    left: 0;
+    cursor: pointer;
+}
+.footer__add-news-letter__btn:hover{
+    background-color: var(--green-color);
+    color: var(--text-color);
+}
+/*======  Finsih Footer News Letter Styles =====*/
+
+
+/*======  Start Footer Copyright Styles =====*/
+.footer__copyright{
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--swiper-bg-color);
+    width: 100%;
+    height: 10rem;
+    flex-direction: column;
+    gap: 2rem;
+}
+.footer__copyright-text{
+    font-size: 3rem;
+    color: var(--text-color);
+}
+.footer__coptyright-subtext{
+    color: var(--subtitle-color);
+    direction : ltr;
+}
+/* /////////////////////////////////////////////      Responsive     ///////////////////////////////////////////// */
+
+@media screen and (max-width : 576px) {
+    .footer__copyright-text{
+        font-size: 1.8rem;
+    }
+    .footer__coptyright-subtext{
+        font-size: 1.4rem;
+    }
+}

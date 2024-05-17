@@ -1,0 +1,134 @@
+@import url(../../../css/fonts.css);
+@import url(../../../css/variables.css);
+@import url(../../../css/default.css);
+@import url(../../../components/topbar/topbar.css);
+@import url(../../../components/footer/footer.css);
+@import url(../../../components/navbar/navbar.css);
+@import url(../../../components/mobileNav/mbileNav.css);
+
+:root {
+    --primary-font: "IranSans";
+    --primary-color: #2bce56;
+    --white-color: #fff;
+    --dark-color: var(--subtitle-color);
+}
+/* ============================== Reset Style ============================== */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* scroll-behavior: smooth; */
+}
+*,
+*:after,
+*:before {
+    outline: none;
+    box-sizing: inherit;
+}
+a {
+    text-decoration: none;
+    transition: all 400ms ease;
+    color: var(--dark-color);
+}
+a:hover {
+    color: #1e83f0;
+}
+i {
+    user-select: none;
+}
+body {
+    line-height: 1.6;
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+}
+/* ============================== Reset Style ============================== */
+
+
+/* ============================== Content Sidebar Style ============================== */
+.content{
+    margin-top: 4rem;
+}
+.content-main {
+    margin: 3rem 0;
+}
+
+.sidebar__name {
+    color: var(--dark-color);
+    font-size: 1.7rem;
+}
+.sidebar__list {
+    margin-top: .7rem;
+}
+.sidebar__link {
+    display: block;
+    padding: 1rem 0;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+/* ============================== Content Sidebar Style ============================== */
+
+/* ============================== Content Main Style ============================== */
+.main {
+    border-right: 2px solid #2bce56;
+    padding-right: 3rem;
+}
+.main__title-text {
+    font-size: 1.7rem;
+}
+.main__title-name {
+    color: #2bce56;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.main__title-link {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.main__desc {
+    margin: 2.3rem 0 2rem 0;
+}
+.main__link {
+    display: block;
+    text-align: center;
+    padding: 1.5rem 0;
+    border: 1px solid #2bce56;
+    border-radius: .3rem;
+    margin-bottom: 1.5rem;
+    transition: all 400ms ease;
+}
+.main__link:hover {
+    background-color: #2bce56;
+    color: var(--white-color);
+    white-space: nowrap;
+    min-width: 111px;
+}
+/* ============================== Content Main Style ============================== */
+
+
+
+/* ============================== Slider Style ============================== */
+.swiper-container {
+    height: 36rem;
+    cursor: grab;
+    overflow: hidden;
+}
+.swiper-pagination {
+    position: absolute;
+    bottom: -4rem !important;
+}
+.swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+    transition: all 400ms ease;
+    opacity: 1 !important;
+    background: transparent;
+    border: 2px solid var(--primary-color);
+}
+.swiper-pagination-bullet-active {
+    background-color: var(--primary-color);
+    transition: all 400ms ease;
+    opacity: 1 !important;
+    width: 35px !important;
+    border-radius: 10px;
+}
+/* ============================== Slider Style ============================== */
+

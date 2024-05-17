@@ -1,0 +1,41 @@
+/*======  Start Pagination Styles =====*/
+web-pagination{
+    margin: 4rem 0;
+}
+.pagination-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.pagination-item{
+    width: 3rem;
+    height: 3rem;
+    
+    background-color: var(--topBar-bg-color);
+    
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+
+    overflow: hidden;
+}
+.pagination-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--topBar-bg-color);
+}
+.pagination-link:hover,
+.pagination-link--active{
+    background-color: var(--green-color);
+    opacity: 1;
+}
+.pagination-icon{
+    font-size: 1.6rem;
+}
+/*======  Finish Pagination Styles =====*/

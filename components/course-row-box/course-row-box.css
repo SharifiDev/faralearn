@@ -1,0 +1,180 @@
+/*===============================       Start Course Row Box Styles  Styles        ============================*/
+course-row-box{
+    margin: 0 auto;
+    width: 90%;
+    margin: 6rem 0 0 0;
+}
+.course-row-box{
+    
+    /*background-color: blue;
+    */padding: 1.2rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    position: relative;
+    box-shadow: 0px 0px 2rem 0.4rem var(--shadow-color);
+}
+.course-row-box::before{
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    
+}
+.course-row-box:hover{
+    transform: translateY(-1rem);
+    -webkit-transform: translateY(-1rem);
+    -moz-transform: translateY(-1rem);
+    -ms-transform: translateY(-1rem);
+    -o-transform: translateY(-1rem);
+    box-shadow: none;
+}
+.course-row-box:hover::before{opacity: 0}
+
+.course-row__box-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+.course-row__box-right{
+    position: relative;
+    height: 18rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+}
+.course-row__box-right-link{
+    left: 2%;
+    max-width: 40rem;
+    position: absolute;
+    overflow: hidden;
+    border-radius:2rem 2rem 1rem 1rem;
+    -webkit-border-radius:2rem 2rem 1rem 1rem;
+    -moz-border-radius:2rem 2rem 1rem 1rem;
+    -ms-border-radius:2rem 2rem 1rem 1rem;
+    -o-border-radius:2rem 2rem 1rem 1rem;
+    top: -50%;
+}
+.course-row__box-right-link:hover{opacity: 1;}
+
+.course-row__box-right-img{
+    width: 100%;
+}
+
+.course-row__box-right__right{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    width: 50%;
+}
+
+.course-row__box-left{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.course-row__box-left-top{
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: 500;
+}
+/* .course-row__box-left-link */
+.course-row__box-left-center{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.course-row__box-left-teacher{
+    color: var(--subtitle-color);
+    display: flex;
+    align-items: center;
+}
+/* .course-row__box-left-icon
+.course-row__box-left-name 
+course-row__box-left-stars*/
+.course-row__box-left-star{
+    margin-right: -0.5rem;
+}
+/* .course-row__box-left-bottom */
+.course__box-left-des{
+    color: var(--subtitle-color);
+    line-height: 2.7rem;
+}
+.course-row__box-footer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 2rem;
+    border-top: 1px solid rgb(0, 0, 0);
+    color: #3f3f3f;
+}
+/* course-row__box-footer-icon
+course-row__box-footer-count */
+.course-row__box-footer-right,
+.course-row__box-footer-left{
+    cursor: pointer;
+}
+
+@media screen and (max-width:934px) {
+    .course-row__box-right-link{
+        width: 50%;
+       top: -4rem;
+    }
+    .course-row__box-left-link{
+        font-size: 1.6rem;
+    }
+
+    .course-row__box-left-teacher,
+    .course__box-left-des{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width:700px) {
+    course-row-box{
+        margin: 2rem 0;
+    }
+    .course-row__box-right{
+        flex-direction: column;
+    }
+    .course-row__box-right__right{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:650px) {
+    .course-row__box-right-link{
+        
+        top: -5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+}
+@media screen and (max-width:350px) {
+    .course-row__box-right-link{
+        width: 85%;
+    }
+    .course-row__box-right__right{
+        padding: 2.5rem 0;
+    }
+}
+/*===============================       Start Course Row Box Styles  Styles        ============================*/

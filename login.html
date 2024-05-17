@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- fontAwesome library Icons Styles -->
+    <link rel="stylesheet" href="./vendor/fontAwesome/fontAwesome.css">
+
+    <!-- Reset Engine Default Styles -->
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./css/fonts.css">
+
+    <!-- Variables Styles -->
+    <link rel="stylesheet" href="./css/variables.css">
+
+    <!-- Default Style -->
+    <link rel="stylesheet" href="./css/default.css">
+
+    <!-- SweetAlert Lib Styles -->
+    <link rel="stylesheet" href="./vendor/SweetAlert2/sweet-alert_2.css">
+    
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="./css/login/login.css">
+    <link rel="stylesheet" href="./css/login/login_responsive.css">
+
+    <title>Asan | login</title>
+</head>
+<body>
+    <!-- <div class="loading-container">
+        <span class="loader"></span>
+    </div> -->
+
+    <header class="header">
+        <top-bar></top-bar>
+
+        <mobile-nav></mobile-nav>
+
+        <nav-bar></nav-bar>
+    </header>    
+
+    <main class="main">
+        <section class="login-register">
+            <div class="login form">
+                <div class="login__header form__header">
+                    <span class="login__header-title form__header-title">ورود به حساب کاربری</span>
+                    <span class="login__header-subtitle form__header-subtitle">خوشحالیم دوباره میبینیمت دوست عزیز:)</span>
+                </div>
+
+                <div class="login__new-member form__nav">
+                    <span class="login__new-member__text form__nav__text">کاربر جدید هستید؟</span>
+                    <span class="login__new-member__link form__nav__link" data-form="register">ثبت نام کنید</span>
+                </div>
+
+                <form class="login-form inputs">
+                    <div class="username inputs-inputBox">
+                        <input type="text" class="username-input inputs-input" id="identifier" placeholder="نام کاربری یا ایمیل خودرا وارد کنید" required>
+                        <i class="fas fa-user username-icon inputs-icon"></i>
+                    </div>
+
+                    <div class="password inputs-inputBox">
+                        <input type="password" class="password inputs-input" id="login-password" placeholder="رمز خودرا وارد کنید" required>
+                        <i class="fas fa-lock-open password-icon inputs-icon"></i>
+                    </div>
+
+                    <button type="submit" class="form-btn" id="login-btn">
+                        <span class="form-btn__text">ورود</span>
+                        <i class="form-btn__icon fas fa-sign-out-alt"></i>
+                    </button>
+                </form>
+
+                <div class="form__pass-setting">
+                    <label for="remember" class="form__pass-setting__remember-me">
+                        <input type="checkbox" id="remember" class="form__pass-setting__remember-me__input">
+                        <span class="form__pass-setting__remember-me__text">مرا به یاد داشته باش</span>
+                    </label>
+
+                    <a class="form__pass-setting__froget-pass">رمز خود را فراموش کرده اید</a>
+                </div>
+
+
+                <div class="form__des">
+                    <span class="form__des-title">کاربرگرامی :</span>
+                    <ul class="form__des-list">
+                        <li class="form-des-item">
+                            لطفا از مرورگر های مطمئن و بروز مانند گوگل کروم و فایرفاکس استفاده کنید.
+                        </li>
+
+                        <li class="form-des-item">
+                            ما هرگز اطلاعات محرمانه شمارا از طریق ایمیل درخواست نمیکنیم.
+                        </li>
+
+                        <li class="form-des-item">
+                            لطفا کلمه عبور خود را در فواصل زمانی کوتاه تغییر دهید.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="register form">
+                <div class="register__header form__header">
+                    <span class="register__header-title form__header-title">ایجاد حساب جدید</span>
+                    <span class="register__header-subtitle form__header-subtitle">خوشحالیم قراره به ما بپیوندی :)</span>
+                </div>
+
+                <div class="register__new-member form__nav">
+                    <span class="register__new-member__text form__nav__text">اکانتی دارید؟</span>
+                    <span class="register__new-member__link form__nav__link" data-form="login">ورود کنید</span>
+                </div>
+
+                <form class="register-form inputs">
+                    <div class="name inputs-inputBox">
+                        <input type="text" class="name-input inputs-input" id="name" placeholder="نام و نام خانوادگی خودرا وارد کنید" required>
+                        <i class="fas fa-user name-icon inputs-icon"></i>
+                    </div>
+
+                    
+
+                    <div class="email inputs-inputBox">
+                        <input type="text" class="email-input inputs-input" id="email" placeholder="آدرس ایمیل خودرا وارد کنید" required>
+                        <i class="fas fa-envelope inputs-icon"></i>
+                    </div>
+                    <div class="email inputs-inputBox">
+                        <input type="text" class="email-input inputs-input" id="email" placeholder="آدرس ایمیل خودرا وارد کنید" required>
+                        <i class="fas fa-envelope inputs-icon"></i>
+                    </div>
+
+                    <div class="phone inputs-inputBox">
+                        <input type="text" class="email-input inputs-input" id="phone" placeholder="شماره موبایل  خودرا وارد کنید" required >
+                        <i class="fas fa-phone inputs-icon"></i>
+                    </div>
+
+                    <div class="password inputs-inputBox">
+                        <input type="password" class="password inputs-input" id="register-password" placeholder="رمز خودرا وارد کنید" required>
+                        <i class="fas fa-lock-open password-icon inputs-icon"></i>
+                    </div>
+
+                    
+
+                    <button type="submit" class="form-btn" id="register-btn">
+                        <span class="form-btn__text">ثبت نام</span>
+                        <i class="form-btn__icon fas fa-sign-out-alt"></i>
+                    </button>
+                </form>
+
+
+                <div class="form__des">
+                    <span class="form__des-title">کاربرگرامی :</span>
+                    <ul class="form__des-list">
+                        <li class="form-des-item">
+                            لطفا از مرورگر های مطمئن و بروز مانند گوگل کروم و فایرفاکس استفاده کنید.
+                        </li>
+
+                        <li class="form-des-item">
+                            ما هرگز اطلاعات محرمانه شمارا از طریق ایمیل درخواست نمیکنیم.
+                        </li>
+
+                        <li class="form-des-item">
+                            لطفا کلمه عبور خود را در فواصل زمانی کوتاه تغییر دهید.
+                        </li>
+                    </ul>
+                </div>
+            </div>            
+        </section>
+    </main>
+
+    <web-footer></web-footer>
+
+    <!-- Coutome Elements Definer -->
+    <script type="module" src="./js/costomElemntsDefiner.js"></script>
+
+    <!-- FontAwsome Lib Scripts -->
+    <script src="./vendor/fontAwesome/fontAwesome.js"></script>
+
+    <!-- SweetAlert Lib Scripts -->
+    <script src="./vendor/SweetAlert2/sweet-alert_2.js"></script>
+
+    <!-- Shared Items Between All Pages -->
+    <script src="./js/funcs/shared.js" type="module"></script>
+        
+    <!-- Main Scripts -->
+    <script type=module src="./js/login-pg/login-app.js" defer></script>
+
+    <!-- Shared Scripts -->
+    <script type="module" src="./js/shared-app.js" defer></script>
+</body>
+</html>

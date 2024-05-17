@@ -1,0 +1,97 @@
+article-box{
+    width: 40rem;
+    height: max-content;
+    border-radius: 1rem;
+    overflow: hidden;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+article-box:hover{
+    transform: translateY(-1rem) !important;
+    -webkit-transform: translateY(-1rem) !important;
+    -moz-transform: translateY(-1rem) !important;
+    -ms-transform: translateY(-1rem) !important;
+    -o-transform: translateY(-1rem) !important;
+    box-shadow: 0 1rem 2rem 1px #ffffff13;
+}
+.article-box{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    background-color: var(--swiper-bg-color);
+    width: 100%;
+}
+.article-box__img-container{
+    width: 100%;
+    height: 42rem;
+    position: relative;
+}
+.article-box__img-container::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, var(--article-shadow-color), var(--article-transparent-shadow-color), var(--article-transparent-shadow-color));
+    width: 100%;
+    height: 100%;
+}
+.article-box__img-container a:hover{
+    opacity: 1;
+}
+.article-box__img{
+    width: 100%;
+    height: 100%;
+}
+
+.article-box__main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-bottom: 3.5rem;
+}
+.article-box-infos{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+.article-box__title{
+    font-size: 2rem;
+    color: var(--text-color);
+    line-height: 2.5rem;
+}
+.article-box__subtitle{
+    font-size: 1.4rem;
+    color: var(--subtitle-color);
+    line-height: 2rem;
+}
+.article-box__btn{
+    align-self:flex-end;
+    margin-left: 1rem;
+    padding: 1rem ;
+    border: 2px solid var(--green-color);
+    color: var(--text-color);
+    background-color: transparent;
+    border-radius: 0.75rem;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -webkit-border-radius: 0.75rem;
+    -moz-border-radius: 0.75rem;
+    -ms-border-radius: 0.75rem;
+    -o-border-radius: 0.75rem;
+    cursor: pointer;
+}
+.article-box__btn:hover{
+    background-color: var(--green-color);
+    opacity: 1;
+}
+
+@media screen and (max-width : 410px) {
+    article-box{
+        width: 100% !important;
+    }
+}

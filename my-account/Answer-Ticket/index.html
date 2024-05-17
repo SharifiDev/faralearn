@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="vendor/BootStrap/BootStrap.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="../shared-responsive.css">
+
+</head>
+
+<body>
+    <!--------------------------------  Header  -------------------------------->
+    <header class="header">
+        <top-bar></top-bar>
+    </header>
+    <!--------------------------------  Header  -------------------------------->
+
+    <!--------------------------------  Content-Section  -------------------------------->
+    <section class="content">
+        <div class="content-header">
+            <div class="container">
+                <span class="content-header__title">حساب کاربری من</span>
+                <span class="content-header__subtitle">پیشخوان</span>
+            </div>
+        </div>
+        <div class="content-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="sidebar">
+                            <span class="sidebar__name user-name"></span>
+                            <ul class="sidebar__list">
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../Account/">پیشخوان</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../Orders/">سفارش</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="#">کیف پول من</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../Edit/">جزئیات حساب کاربری</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../Buyed/">دوره های خریداری شده</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../Tickets/">تیکت های پشتیبانی</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../../contactUs.html">ارتباط با ما</a>
+                                </li>
+                                <li class="sidebar__item" id="logout-user">
+                                    <a class="sidebar__link" id="logout-btn">خروج از سیستم</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="ticket">
+                            <div class="ticket-header">
+                                <a href="../Tickets/" class="ticket-header__title">همه تیکت ها</a>
+                                <a class="ticket-header__link" href="../Send-Ticket/">ارسال تیکت جدید</a>
+                            </div>
+                            <div class="ticket-top">
+                                <div class="ticket-top__right">
+                                    <a class="ticket-top__link" href="../Tickets/">
+                                        <i class="fa fa-angle-right ticket-top__icon"></i>
+                                    </a>
+                                </div>
+                                <div class="ticket-top__left">
+                                    <span class="ticket-top__title" id="ticket-title"></span>
+                                </div>
+                            </div>
+                            <div class="ticket-send">
+                                <div class="ticket-send__header">
+                                    <div class="ticket-send__header-right">
+                                        <div class="ticket-send__header-mic">
+                                            <i class="fa fa-microphone ticket-send__header-icon"></i>
+                                            <span class="ticket-send__header-text">0</span>
+                                        </div>
+                                        <div class="ticket-send__header-pin">
+                                            <i class="fa fa-paperclip ticket-send__header-icon"></i>
+                                            <span class="ticket-send__header-text">0</span>
+                                        </div>
+                                    </div>
+                                    <div class="ticket-send__header-left">
+                                        <i class="fa fa-bars ticket-send__header-icon-left"></i>
+                                    </div>
+                                </div>
+                                <div class="ticket-send__title">
+                                    <span class="ticket-send__title-text">
+                                        <i class="ticket-send__title-icon fa fa-plus"></i>
+                                        تیکت
+                                    </span>
+                                </div>
+                                <div class="ticket-send__answer">
+                                    <div class="ticket-send__answer-box">
+                                        <p class="ticket-send__answer-text" id="ticket-el"></p>
+                                    </div>
+                                    <div class="ticket-send__answer-bottom">
+                                        <span class="ticket-send__answer-name ticket-send__answer-span user-name" id="ticket-sender"></span>
+                                        <span class="ticket-send__answer-date ticket-send__answer-span" id="ticket-date"></span>
+                                    </div>
+                                </div>
+                                <div class="ticket-send__title">
+                                    <span class="ticket-send__title-text">
+                                        <i class="ticket-send__title-icon fa fa-plus"></i>
+                                        پاسخ 
+                                    </span>
+                                </div>
+                                <div class="ticket-send__answer-user">
+                                    <div class="ticket-send__answer-user-box">
+                                        <p class="ticket-send__answer-user-text" id="answer-el"></p>
+                                    </div>
+                                    <div class="ticket-send__answer-user-bottom">
+                                        <span class="ticket-send__answer-user-name ticket-send__answer-user-span" id="answer-sender"></span>
+                                        <span class="ticket-send__answer-user-date ticket-send__answer-user-span" id="answer-date"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------------------  Content-Section  -------------------------------->
+
+    <!--------------------------------  Footer-Section  -------------------------------->
+    <web-footer></web-footer>
+    <!--------------------------------  Footer-Section  -------------------------------->
+
+    <script src="vendor/FontAwesome5/font_awesome.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="../../js/my-account/shared-app.js"></script>
+</body>
+
+</html>

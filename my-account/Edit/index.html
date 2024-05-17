@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="vendor/BootStrap/BootStrap.css">
+    <link rel="stylesheet" href="vendor/SweetAlert2/sweet-alert_2.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="../shared-responsive.css">
+
+</head>
+
+<body>
+    <!--------------------------------  Header  -------------------------------->
+    <header class="header">
+        <top-bar></top-bar>
+    </header>
+    <!--------------------------------  Header  -------------------------------->
+
+    <!--------------------------------  Content-Section  -------------------------------->
+    <section class="content">
+        <div class="content-header">
+            <div class="container">
+                <span class="content-header__title">حساب کاربری من</span>
+                <span class="content-header__subtitle">پیشخوان</span>
+            </div>
+        </div>
+        <div class="content-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="sidebar">
+                            <span class="sidebar__name user-name"></span>
+                            <ul class="sidebar__list">
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../Account/">پیشخوان</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../Orders/">سفارش</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="#">کیف پول من</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../Edit/">جزئیات حساب کاربری</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../Buyed/">دوره های خریداری شده</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../Tickets/">تیکت های پشتیبانی</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../../contactUs.html">ارتباط با ما</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" id="logout-btn">خروج از سیستم</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="edit">
+                            <div class="edit__form" action="#">
+                                <div class="edit__personal">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label class="edit__label">شماره موبایل *</label>
+                                            <input class="edit__input" type="text"
+                                                id="phone"
+                                                placeholder="لطفا شماره موبایل خود را وارد کنید">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="edit__label">نام و نام خانوادگی*</label>
+                                            <input class="edit__input" type="text"
+                                                id="name"
+                                                placeholder="لطفا نام خود را وارد کنید">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="edit__label">نام کاربری *</label>
+                                            <input class="edit__input" type="text"
+                                                id="username"
+                                                placeholder="لطفا نام خانوادگی خود را وارد کنید">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="edit__label">آدرس ایمیل *</label>
+                                            <input class="edit__input" type="text"
+                                                id="email"
+                                                placeholder="لطفا نام نمایشی خود را وارد کنید">
+                                            <!-- <span class="edit__help">اسم شما به این صورت در حساب کاربری و نظرات دیده
+                                                خواهد شد.</span> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="edit__password">
+                                    <span class="edit__password-title">تغییر گذرواژه</span>
+                                    <div class="row">
+                                        
+                                        <div class="col-12">
+                                            <label class="edit__label">گذرواژه جدید *</label>
+                                            <input class="edit__input" type="text"
+                                                id="password"
+                                                placeholder="گذرواژه جدید">
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <button class="edit__btn" type="submit" onclick="updateAdminInfo('../Account/')">ذخیره تغییرات</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------------------  Content-Section  -------------------------------->
+
+   <web-footer></web-footer>
+    <!--------------------------------  Footer-Section  -------------------------------->
+    <script type="module" src="../../js/costomElemntsDefiner.js"></script>
+    <script src="vendor/FontAwesome5/font_awesome.js"></script>
+    <script src="vendor/SweetAlert2/sweet-alert_2.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="../../js/my-account/shared-app.js"></script>
+</body>
+
+</html>

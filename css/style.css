@@ -1,0 +1,461 @@
+@import url(../components/loader/loader.css);
+@import url(./default.css);
+@import url(../components/topbar/topbar.css);
+@import url(../components/navbar/navbar.css);
+@import url(../components//mobileNav/mbileNav.css);
+@import url(../components/course-box/course-box.css);
+@import url(../components/article-box/article-box.css);
+@import url(../components/footer/footer.css);
+@import url(../css/container.css);
+/*===============================       Start Loading Styles        ============================*/
+
+
+/*===============================       Finish Loading Styles        ============================*/
+
+
+
+
+/*===============================       Start Heder Styles        ============================*/
+.header{}
+
+
+
+/*======  Start mobile-nav Styles =====*/
+/*======  Finish mobile-nav Styles =====*/
+
+
+
+
+/*===============================       Finish Heder Styles        ============================*/
+
+
+/*===============================       Start Mobile-nav Styles        ============================*/
+
+/*===============================       Finish Mobile-nav Styles        ============================*/
+
+
+/*===============================       Start Landing Styles        ============================*/
+.landing{
+    width: 100%;
+    height: 55rem;   
+    background: linear-gradient(transparent, #000000a2 ,#000000a2, transparent),url(../images/blogs//background_landing.jfif);
+    background-size: cover;
+    background-position: center center;
+    padding-top: 2.25rem;
+    margin-top: 5rem;
+
+}
+
+.landing .container{
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+  .landing__title{
+    font-size: 4.5rem;
+  }
+
+
+  .landing__subtitle{
+    color: var(--subtitle-color);
+    transform: translateY(-2rem);
+    -webkit-transform: translateY(-2rem);
+    -moz-transform: translateY(-2rem);
+    -ms-transform: translateY(-2rem);
+    -o-transform: translateY(-2rem);
+}
+
+  .landing__searchbox{
+    width: 40%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+    .landing__searchbox-input{
+        width: 100%;
+        height: 100%;
+        padding: 2rem ;
+        border-radius: 1rem;
+        outline: none;
+        border: none;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+        color: black;
+    }
+.landing__searchbox-input::placeholder{
+    color: gray;
+}
+    .landing__searchbox-btn{
+        position: absolute;
+        left: 1.5rem;
+        z-index: 2;
+        width: 5rem;
+        height: 88%;
+        background-color: var(--green-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.8rem;
+        -webkit-border-radius: 0.8rem;
+        -moz-border-radius: 0.8rem;
+        -ms-border-radius: 0.8rem;
+        -o-border-radius: 0.8rem;
+        cursor: pointer;
+    }
+
+        .landing__searchbox-icon{}/*Empty*/
+
+
+  .landing__status{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 6rem;
+  }
+
+    .landing__status-item{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    .landing__status-item svg{
+        fill: var(--text-color);
+    }
+    .landing__status-count{
+        margin-top: 1.4rem;
+        
+    }
+
+    .landing__status-text{
+        text-align: center;
+    }
+
+/*===============================       Finish Landing Styles        ============================*/
+
+
+
+
+/*===============================       Start Main Tag  Styles        ============================*/
+.main{
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+    position: relative
+}
+    .circle{
+        position: absolute;
+        width: 30rem;
+        height: 30rem;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        
+        z-index: -1;
+    }
+    .circle-one{
+        left: 3%;
+        top: 10%;
+        background-color: #ffd900;
+        box-shadow: 0px 0px 2rem  1.4rem #ffd900;
+    }
+    .circle-two{
+        right: 3%;
+        top: 30%;
+        background-color: #51ff00;
+        box-shadow: 0px 0px 2rem  1.4rem #51ff00;
+    }
+    .circle-three{
+        left: 3%;
+        bottom: 30%;
+        background-color: red;
+        box-shadow: 0px 0px 2rem  1.4rem red;
+    }
+    .circle-four{
+        right: 3%;
+        bottom: 10%;
+        background-color: #008cff;
+        box-shadow: 0px 0px 2rem  1.4rem #008cff;
+    }
+    .main-container{
+        width: 100%;
+        height: max-content;
+        background-color: #00000000;
+        backdrop-filter: blur(12rem);
+    }
+/*===============================       Finish Main Tag  Styles        ============================*/
+
+
+
+
+/*===============================       Start Lates Courses  Styles        ============================*/
+.lates-courses{
+    width: 100%;
+    height: max-content;
+}
+
+/*======  Start Lates-Courses Header Styles =====*/
+.lates-courses__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width : 100%;
+    overflow: hidden;
+}
+
+  .lates-courses__header-right{} /*Empty*/
+
+    .lates-courses__header-title{
+        display: flex;
+        align-items: center;
+    }
+    .lates-courses__header-text{
+        color: var(--subtitle-color);
+    }
+
+  /* lates-courses__header-left */
+    /* lates-courses__header-button */
+    /* lates-courses__header-icon */
+/*======  Finish Lates-Courses Header Styles =====*/
+
+
+
+/*======  Start Lates-Courses Main  And Course-box Style Styles =====*/
+.lates-course__main{
+    width: 100%;
+    height: max-content;
+}
+.lates-course__main .container{
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    width: 100%;
+    justify-content: center;
+    
+    
+}
+
+
+
+
+
+/*======  Finsih Lates-Courses Main Styles =====*/
+/*===============================       Finish Lates Courses  Styles        ============================*/
+
+
+
+
+
+/*===============================       Start About-us Styles        ============================*/
+.about-us{}/*Empty*/
+/*======  Start About-us Header  Styles =====*/
+.about-us__header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    line-height: 0;
+}
+    .about-us__header-title{} /*Empty*/
+    .about-us__header-subtitle{
+        color: var(--subtitle-color);
+    }
+/*======  Finsih About-us Header  Styles =====*/
+
+
+
+/*======  Start About-us  Main Styles =====*/
+.about-us__main{
+    width: 100%;
+    display: flex;
+    gap: 4rem;
+    padding: 5rem 0;
+    flex-direction: column;
+}
+  .about-us__main-row{
+    width: 100%;
+    display: flex;
+    
+    
+    gap: 4rem;
+    
+}
+  .about-box{
+    background: linear-gradient(to right bottom, rgb(229, 163, 62), rgb(253, 93, 1));
+    width: 50%;
+    /* height: 15rem; */
+    border-radius: 1.25rem;
+    -webkit-border-radius: 1.25rem;
+    -moz-border-radius: 1.25rem;
+    -ms-border-radius: 1.25rem;
+    -o-border-radius: 1.25rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 1rem 2rem;
+    
+}
+  .about-box__right{
+    /* width: 15%; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #fdba01;
+    padding-left: 1rem;
+    font-size: 8rem;
+    height: 100%;
+
+  }
+  .about-box__icon{}/*Empty*/
+  .about-us__left{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    height: 100%;
+    padding-right: 1rem;
+  }
+  .about-box__title{
+    font-size: 2.4rem;
+  }
+  .abou-box__subtitle{
+    color: var(--subtitle-color);
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+/*======  Finsih About-us  Main Styles =====*/
+/*===============================       Finish About-us Styles        ============================*/
+
+
+
+
+
+/*===============================       Start Popular Courses Styles        ============================*/
+/* .popular-courses{} Empty*/
+/*======  Start Popular Courses Header Styles =====*/
+.popular-courses__header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+    /* .popular-courses__title{} Empty */
+/*======  Finsih Popular Courses Header Styles =====*/
+
+/*======  Start Popular Courses  Main Styles =====*/
+.popular-courses__main{
+    
+}
+.popular-courses__container{
+    height:  40rem;
+    padding: 4rem 0;
+    
+    background-color: var(--swiper-bg-color);
+    backdrop-filter: blur(2rem);
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    background-color: #35353541;
+    backdrop-filter: blur(4rem);
+    height: 100%;
+    inset: 0;
+    margin-top: 0;
+    padding: 2rem;
+}
+.swiper-button-next{
+    left: 0 !important;
+}
+.swiper-button-prev{
+    right: 0 !important;
+}
+.swiper-pagination{
+    background-color: white;
+    padding: 0.5rem 2rem ;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.swiper-wrapper .course-box:hover{
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+}
+/*======  Finsih Popular Courses  Main Styles =====*/
+/*===============================       Finish Popular Courses Styles        ============================*/
+
+
+
+
+
+/*===============================       Start Lates Article Styles        ============================*/
+/* lates-articles */
+
+/*======  Start Articles Header  Main Styles =====*/
+.lates-articles__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+  .articles__header-right{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+    /* lates-artivle__title */
+    .lates-courses__subtitle{
+        color: var(--subtitle-color);
+    }
+
+  /* article__header-left
+    article__header-btn
+    article__header-icon */
+/*======  Finsih Articles Header  Main Styles =====*/
+
+
+/*======  Start Articles Main  Main Styles =====*/
+.lates-articles__main{
+    width: 100%;
+    height: max-content;
+    padding: 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    /* padding: 1rem; */
+}
+
+
+/*======  Finsih Articles Main  Main Styles =====*/
+/*===============================       Finish Lates Article Styles        ============================*/
+
+
+
+
+/*===============================       Start Footer Styles        ============================*/
+
+/*======  Finsih Footer Copyright Styles =====*/
+/*===============================       Finish Footer Styles        ============================*/

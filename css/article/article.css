@@ -1,0 +1,528 @@
+@import url(../../components/loader/loader.css);
+@import url(../default.css);
+@import url(../../components/topbar/topbar.css);
+@import url(../../components/navbar/navbar.css);
+@import url(../../components//mobileNav/mbileNav.css);
+@import url(../../components/breadcrumb/breadcrumb.css);
+@import url(../../components/asideProducts/asideProducts.css);
+@import url(../../components/footer/footer.css);
+@import url(../container.css);
+@import url(../helper-class.css);
+
+
+/*===============================       Start Containers Styles        ============================*/
+.main{
+    margin: 15rem 0 7.5rem 0;
+}
+
+
+.main_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    /* border: 5px solid red; */
+    margin-top: 10rem;
+    
+    justify-content: space-between;
+    gap: 2rem;
+    
+}
+.right_container{
+    flex-grow: 3;
+    /*border: 2px solid #1100ff;
+    min-width: 78rem;*/
+    max-width: 92.5rem;
+    
+}
+.left_container{
+    flex-grow: 1;
+    /* border: 2px solid #fffb00; */
+    max-width: 42.5rem;
+    min-width: 25.5rem;
+    position: sticky;
+    top: 4rem;
+    height: max-content;
+    
+}
+
+.aside-item{
+    padding: 2rem 3rem;
+    overflow: hidden;
+}
+
+.aside-title{
+    position: relative;
+}
+.aside-title::before{
+    content: '';
+    position: absolute;
+    width: 6.1rem;
+    height: 4rem;
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius: 1.2rem;
+    transform: skew(-12deg);
+    -webkit-transform: skew(-12deg);
+    -moz-transform: skew(-12deg);
+    -ms-transform: skew(-12deg);
+    -o-transform: skew(-12deg);
+    right :-7.3rem;
+    top: 0;
+    background-color: var(--green-color);
+}
+/*===============================      Finish Containers Styles        ============================*/
+
+.paraghrap{
+    color: var(--subtitle-color);
+    line-height: 2.4rem;
+}
+
+
+
+/*===============================       Start Article Styles        ============================*/
+.article{
+    width: 100%;
+    padding: 2.5rem 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 0px 0px 10px 5px #ffffff15;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.article__title{
+    font-size: 2.2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--subtitle-color);
+    font-weight: 400;
+    width: 100%;
+    line-height: 3rem;
+}
+
+/*======  Start Articel Header  Styles =====*/
+.article__header{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    width: 100%;
+}
+.article__header-item{
+    font-size: 1.3rem;
+    color: var(--subtitle-color);
+    text-align: center;
+}
+.article__header-icon{
+    opacity: 0.9;
+    margin-left: 0.1rem;
+}
+/* .artilce__header-text */
+/*======  Finsih Articel Header  Styles =====*/
+
+.artilce__banner{
+    width: 100%;
+    margin: 5rem auto 0 auto;
+    
+    border-radius: 1rem;
+    /* height: 50rem; */
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+
+
+/*======  Start Articel Points  Styles =====*/
+.article__point{
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+    padding-right: 5rem;
+}
+.article__point-icons{
+    margin-left: 1rem;
+}
+.article__point-icon{
+    margin-right: -0.6rem;
+}
+/* .article__point-text */
+/*======  Finsih Articel Points  Styles =====*/
+
+
+.article__paraghraph{
+    margin-top: 3rem;
+    color: var(--subtitle-color);
+    line-height: 3rem;
+}
+
+
+/*======  Start Articel Read  Styles =====*/
+.article__read{
+    margin-top: 3rem;
+    width: 100%;
+    border-radius: 2.5rem;
+    background-color: var(--topBar-bg-color);
+    padding: 1.2rem 2rem;
+    -webkit-border-radius: 2.5rem;
+    -moz-border-radius: 2.5rem;
+    -ms-border-radius: 2.5rem;
+    -o-border-radius: 2.5rem;
+}
+.article__read-title{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.article__read-list{
+    margin-top: 1.6rem;
+}
+.article__read-item{
+    margin-top: 1.2rem;
+}
+.artilce__read-link{
+    color : #18006d;
+}
+.artilce__read-link:hover{
+    text-decoration: underline;
+    color: blue;
+}
+/*======  Finsih Articel Read  Styles =====*/
+
+
+
+
+
+/*======  Start Articel section  Styles =====*/
+.article__section{
+    width: 100%;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+.article__section-img{
+    margin: 0 auto;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    max-width: 90%;
+}
+.article__section-title{
+    margin-top: 2rem;
+    color: var(--green-color);
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3rem;
+}
+.article__section-text{
+    font-size: 1.375rem;
+}
+/*======  Finsih Articel section  Styles =====*/
+
+
+/*======  Start Articel Sharing  Styles =====*/
+.article__social-media{
+    width: 100%;
+    margin: 7rem 0 4rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.article__social-media__text{
+    font-size: 1.55rem;
+    color: var(--subtitle-color);
+}
+/* .article__social-media__link */
+.article__social-media__icon{
+    color: var(--subtitle-color);
+    font-size: 1.6rem;
+    opacity: 0.925;
+}
+/*======  Finsih Articel Sharing  Styles =====*/
+
+/*===============================       Finsh Article Styles        ============================*/
+
+
+
+
+/*===============================       Start Previous And Next Articles Styles        ============================*/
+.preAndNextArticles{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    background-color: var(--topBar-bg-color);
+    height: 15rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    box-shadow: 0px 0px 10px 0px #ffffff48;
+    padding: 2rem;
+}
+.preAndNextArticles__right,
+.preAndNextArticles__left{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.preAndNextArticles__right{
+    padding-left: 2rem;
+}
+.preAndNextArticles__left{
+    flex-direction: row-reverse;
+    padding-right: 2rem;
+    border-right: 2px solid var(--swiper-bg-color);
+}
+.preAndNextArticles__icon{
+    font-size: 3rem;
+    transition: 10ms;
+    -webkit-transition: 10ms;
+    -moz-transition: 10ms;
+    -ms-transition: 10ms;
+    -o-transition: 10ms;
+}
+.preAndNextArticles__icon:hover{
+    color: var(--link-hover-color);
+}
+.preAndNextArticles__title {
+    line-height: 2.75rem;
+    text-align: center;
+}
+/*===============================       Finsh Previous And Next Articles Styles        ============================*/
+
+
+
+
+
+
+/*===============================       Start Comments Styles        ============================*/
+.comment{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: var(--swiper-bg-color);
+    border-radius: 1.5rem;
+    box-shadow: 0px 0px 10px 0px #ffffff48;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.comment__text,
+.comment__content,
+.comment__send-btn{
+    padding: 0 1rem;
+}
+
+.comment__title{
+    align-self: flex-start;
+    color: var(--subtitle-color);
+    padding: 1rem;
+    border-bottom: 2px solid var(--topBar-bg-color);
+}
+.comment__text{
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-bottom: 4rem;
+    border-bottom: 3px solid var(--green-color);
+    line-height: 3rem;
+
+}
+/* .comment__text-top */
+/* .comment-link */
+.comment__text-bottom{
+    font-size: 1.2rem;
+    color: var(--subtitle-color);
+}
+.comment__content{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+}
+/* .comment__content-title */
+.comment__content-input{
+    /*display: inline-block;
+    */max-width: 100%;
+    min-width: 100%;
+    min-height: 20rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    background-color: var(--topBar-bg-color);
+
+    
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    padding: 2rem ;
+    color: var(--text-color);
+}
+.comment__send-btn{
+    align-self: flex-start;
+    padding: 1.5rem 3rem;
+    background-color: var(--green-color);
+    color: var(--text-color);
+    outline: 2px solid var(--green-color);
+    border-radius: 0.8rem;
+    -webkit-border-radius: 0.8rem;
+    -moz-border-radius: 0.8rem;
+    -ms-border-radius: 0.8rem;
+    -o-border-radius: 0.8rem;
+    cursor: pointer;
+}
+
+.comment__send-btn:hover{
+    outline-offset: 0.25rem;
+}
+
+
+
+/*===============================       Finsh Comments Styles        ============================*/
+
+
+
+
+/*===============================       Start Aside  Quick Access Links Styles        ============================*/
+.aside__quick-acciss{
+    background-color: var(--topBar-bg-color);
+    margin-top: 2.5rem;
+    border-radius: 1.25rem;
+    -webkit-border-radius: 1.25rem;
+    -moz-border-radius: 1.25rem;
+    -ms-border-radius: 1.25rem;
+    -o-border-radius: 1.25rem;
+    border-bottom: 3px solid var(--green-color);
+}
+.aside__quick-acciss-title{
+    font-size: 2.2rem;
+
+}
+.aside__quick-acciss__list{
+    margin-top: 2.5rem;
+}
+.aside__quick-acciss__item{
+    width: 100%;
+    height: max-content;
+    border-bottom: 2px solid var(--swiper-bg-color);
+
+}
+
+.aside__quick-acciss__item:last-child{
+    border: none;
+}
+
+.aside__quick-acciss__item:hover {
+    border-bottom: 2px solid var(--green-color);
+    background-color: var(--swiper-bg-color);
+    border-radius: 0 0 1rem 1rem;
+    -webkit-border-radius: 0 0 1rem 1rem;
+    -moz-border-radius: 0 0 1rem 1rem;
+    -ms-border-radius: 0 0 1rem 1rem;
+    -o-border-radius: 0 0 1rem 1rem;
+}
+.aside__quick-acciss__link{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1.2rem 0rem;
+    
+    font-size: 1.5rem;
+    color: var(--subtitle-color);
+    opacity: 1;
+}
+
+.aside__quick-acciss__link:hover{
+    opacity: 1;
+    transform: translateX(-1rem);
+    -webkit-transform: translateX(-1rem);
+    -moz-transform: translateX(-1rem);
+    -ms-transform: translateX(-1rem);
+    -o-transform: translateX(-1rem);
+}
+.aside__quick-acciss__icon{
+    opacity: 0.9;
+    font-size: 1.84rem;
+    margin-left: 0.8rem;
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+}
+.aside__quick-acciss__link:hover .aside__quick-acciss__icon{
+    opacity: 1;
+    color: var(--green-color);
+}
+/*===============================       Finsh Aside  Quick Access Links Styles        ============================*/
+
+
+
+
+/*===============================       Finsh Aside  Lates Articles Styles        ============================*/
+.aside__lates-articles{
+    margin-top: 2.5rem;
+    background-color: var(--swiper-bg-color);
+    border-bottom: 2px solid var(--topBar-bg-color);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.aside__lates-articles__title{
+    font-size: 2.2rem;
+}
+.aside__lates-articles__list{
+    margin-top: 2.5rem;
+}
+.aside__lates-articles__item{
+    width: 100%;
+    height: max-content;
+    border-bottom: 1px solid var(--green-color);
+}
+.aside__lates-articles__item:last-child{
+    border: none;
+}
+.aside__lates-articles__link{
+    display: inline-block;
+    width: 100%;
+    padding: 1.2rem 0;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+/*===============================       Finsh Aside  Lates Articles Styles        ============================*/
+
+.aside__lates-courses{
+    margin-top: 2.5rem;
+}
+
+
+

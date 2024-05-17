@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Reset Engine Default Styles -->
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <!-- Bootstrap Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- fontAwesome library Icons Styles -->
+    <link rel="stylesheet" href="./vendor/fontAwesome/fontAwesome.css">
+
+    <!-- SwetAlert Lib Styles -->
+    <link rel="stylesheet" href="./vendor/SweetAlert2/sweet-alert_2.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./css/fonts.css">
+
+    <!-- Variables Styles -->
+    <link rel="stylesheet" href="./css/variables.css">
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="./css/episode/episode.css">
+    <link rel="stylesheet" href="./css/episode/episode_responsive.css">
+
+    <title>جلسات</title>
+  </head>
+  <body>
+    <div class="loading-container">
+      <span class="loader"></span>
+    </div>
+
+    <header class="header">
+      <top-bar></top-bar>
+
+      <mobile-nav></mobile-nav>
+
+      <nav-bar></nav-bar>
+    </header>
+
+    <main class="main">
+      <div class="container" id="main-container">
+        <bread-crumb></bread-crumb>
+
+        <div class="part">
+            <div class="part__right">
+              <div class="part-info">
+                <span class="part-info__course-name">
+                  <!-- Loaded From JS -->
+                </span>
+
+                <video class="part-info__video" controls></video>
+
+                <div class="part-info__details">
+                  <!-- Spans Value Loaded From JS -->
+                  <span class="part-info__details__part-count"></span> | <span class="part-inof__details__part-name"></span>
+                </div>
+              </div>
+
+              <div class="mobile-sidebar">
+                <div class="accordion course-sessions" id="accordionExample">
+                  <!-- Loaded From JS -->
+                </div>
+  
+  
+                <div class="course-status">
+                  <div class="course-status__item">
+                    <i class="fas fa-info-circle course-status__icon"></i>
+                    <span class="course-status__value part__course-status" id="course-status"></span>
+                    <span class="course-status__title"> وضعیت دوره</span>
+                  </div>
+  
+                  <div class="course-status__item">
+                    <i class="fas fa-clock course-status__icon"></i>
+                    <span class="course-status__value part__course-time" id="course-parts"></span>
+                    <span class="course-status__title"> زمان دوره</span>
+                  </div>
+  
+                  <div class="course-status__item">
+                    <i class="fas fa-video-camera course-status__icon"></i>
+                    <span class="course-status__value part__course-parts" id="course-parts"></span>
+                    <span class="course-status__title"> جلسات دوره</span>
+                  </div>
+                </div>
+  
+                <div class="course-detilas__mobile__teacher-profile">
+                  <div class="course-detials__mobile__teacher-profile__top">
+                      <div class="course-detilas__mobile__teacher-profile__right">
+                          <div class="course-detilas__mobile__teacher-profile__image">
+                              <img alt="teacher-profile" class="course-detilas__mobile__teacher-profile__img teacher-img">
+                          </div>
+                      </div>
+
+                      <div class="course-detilas__mobile__teacher-profile__left">
+                          <span class="course-detilas__mobile__teacher-profile__title teacher-name"></span>
+                          <span class="course-detilas__mobile__teacher-profile__subtitle">Front  End Developer</span>
+                      </div>
+                  </div>
+
+                  <div class="course-detials__mobile__teacher-profile__bottom">
+                      <span class="course-detilas__mobile__teacher-profile__see-teacher">مشاهده پروفایل</span>
+                      <svg class="svg-inline--fa fa-chalkboard-user course-detilas__mobile__teacher-profile__bottom-icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chalkboard-user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M160 64c0-35.3 28.7-64 64-64H576c35.3 0 64 28.7 64 64V352c0 35.3-28.7 64-64 64H336.8c-11.8-25.5-29.9-47.5-52.4-64H384V320c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v32h64V64L224 64v49.1C205.2 102.2 183.3 96 160 96V64zm0 64a96 96 0 1 1 0 192 96 96 0 1 1 0-192zM133.3 352h53.3C260.3 352 320 411.7 320 485.3c0 14.7-11.9 26.7-26.7 26.7H26.7C11.9 512 0 500.1 0 485.3C0 411.7 59.7 352 133.3 352z"></path></svg><!-- <i class="fas fa-chalkboard-teacher course-detilas__mobile__teacher-profile__bottom-icon"></i> Font Awesome fontawesome.com -->
+                  </div>
+              </div>
+              </div>
+
+              <div class="part-question">
+                <span class="part-question__title">پرسش و پاسخ</span>
+
+                <div class="part-question__user-info">
+                  <div class="part-question__user-info__right">
+                    <img id="user-img" alt="user-img" class="part-question__user-info__img">
+                  </div>
+
+                  <div class="part-question__user-info__left">
+                    <span class="part-question__user-info__name" id="user-name"></span>
+                    <span class="part-question__part-question__subtitle">پرسش جدید</span>
+                  </div>
+                </div>
+
+                <textarea class="part-question__input" id="user-question-input" placeholder="سوال خود را بپرسید."></textarea>
+
+                <div class="part-question__footer">
+                  <div class="part-question__footer-right">
+                    <button class="part-question__footer-btn attachment-btn">پیوست</button>
+                  </div>
+
+                  <div class="part-question__footer-left">
+                    <button class="part-question__footer-btn clear-btn">حذف </button>
+                    <button class="part-question__footer-btn send-btn">ارسال</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="part__left">
+              <div class="accordion course-sessions" id="accordionExample">
+                <!-- Loaded From JS -->
+              </div>
+
+
+              <div class="course-status">
+                <div class="course-status__item">
+                  <i class="fas fa-info-circle course-status__icon"></i>
+                  <span class="course-status__value part__course-status"></span>
+                  <span class="course-status__title"> وضعیت دوره</span>
+                </div>
+
+                <div class="course-status__item">
+                  <i class="fas fa-clock course-status__icon"></i>
+                  <span class="course-status__value part__course-time"></span>
+                  <span class="course-status__title"> زمان دوره</span>
+                </div>
+
+                <div class="course-status__item">
+                  <i class="fas fa-video-camera course-status__icon"></i>
+                  <span class="course-status__value part__course-parts"></span>
+                  <span class="course-status__title"> جلسات دوره</span>
+                </div>
+              </div>
+
+              <div class="course-teacher">
+                <div class="course-teacher__image-container">
+                  <img alt="" class="course-teacher__img teacher-img">
+                </div>
+                <span class="course-teacher__name teacher-name"></span>
+                <a href="#" class="course-teacher__link">
+                  <i class="fas fa-chalkboard-teacher"></i>
+                  مدرس دوره
+                </a>
+                <p class="course-teacher__description">
+                  
+                </p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </main>
+
+    <web-footer></web-footer>
+
+    
+    <!-- Coutome Elements Definer -->
+    <script type="module" src="./js/costomElemntsDefiner.js"></script>
+    
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- FontAwsome Lib Scripts -->
+    <script src="./vendor/fontAwesome/fontAwesome.js"></script>
+
+    <!-- SweetAlert Lib Scripts -->
+    <script src="./vendor/SweetAlert2/sweet-alert_2.js"></script>
+
+    <!-- Main Script -->
+    <script type="module" src="./js/episode-pg/episode-app.js" defer></script>
+
+    <!-- Shared Scripts -->
+    <script type="module" src="./js/shared-app.js" defer></script>
+  </body>
+</html>

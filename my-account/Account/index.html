@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="vendor/BootStrap/BootStrap.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="../shared-responsive.css">
+
+</head>
+
+<body>
+    <!--------------------------------  Header  -------------------------------->
+    <header class="header">
+       <top-bar></top-bar>
+    </header>
+    <!--------------------------------  Header  -------------------------------->
+
+    <!--------------------------------  Content-Section  -------------------------------->
+    <section class="content">
+        <div class="content-header">
+            <div class="container">
+                <span class="content-header__title">حساب کاربری من</span>
+                <span class="content-header__subtitle">پیشخوان</span>
+            </div>
+        </div>
+        <div class="content-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="sidebar">
+                            <span class="sidebar__name user-name"></span>
+                            <ul class="sidebar__list">
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../Account/">پیشخوان</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../Orders/">سفارش</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="#">کیف پول من</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../Edit/">جزئیات حساب کاربری</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../Buyed/">دوره های خریداری شده</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../Tickets/">تیکت های پشتیبانی</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../../contactUs.html">ارتباط با ما</a>
+                                </li>
+                                <li class="sidebar__item" id="logout-user">
+                                    <a class="sidebar__link" id="logout-btn">خروج از سیستم</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="main">
+                            <div class="main__title">
+                                <span class="main__title-text">سلام <span class="main__title-name user-name"></span> نیستید؟</span>
+                                <a class="main__title-link" href="#">خارج شوید</a>
+                            </div>
+                            <p class="main__desc">از طریق پیشخوان حساب کاربری‌تان، می‌توانید سفارش‌های اخیرتان را
+                                مشاهده، آدرس‌های حمل و نقل و صورتحساب‌تان را مدیریت و جزییات حساب کاربری و کلمه عبور خود
+                                را ویرایش کنید.
+                            </p>
+                            <div class="main__links">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <a class="main__link" href="../Orders/">سفارش</a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="main__link" href="#">کیف پول من</a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="main__link" href="../Edit/">جزئیات حساب</a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="main__link" href="../Buyed/">دوره های من</a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="main__link" href="../Tickets/">تیکت های پشتیبانی</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------------------  Content-Section  -------------------------------->
+
+    <!--------------------------------  Footer-Section  -------------------------------->
+   <web-footer></web-footer>
+    <!--------------------------------  Footer-Section  -------------------------------->
+    <script type="module" src="../../js/costomElemntsDefiner.js"></script>
+    <script src="vendor/FontAwesome5/font_awesome.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="../../js/my-account/shared-app.js"></script>
+</body>
+
+</html>

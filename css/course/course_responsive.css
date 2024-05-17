@@ -1,0 +1,148 @@
+@media screen and (max-width : 1080px) {
+    .course-info{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .course-info__right{
+        order: 1;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 1316px) {
+    .course-details__left{
+        display: none;
+    }
+    .progress-point{
+        display: flex;
+    }
+    .course-detilas__mobile__teacher-profile{
+        display: flex;
+    }
+}
+@media screen and (max-width : 760px) {
+    
+}
+@media screen and (max-width : 770px) {
+    .course-details__boxes{
+        gap: 0.5rem;
+    }
+    .course-details__box{
+        flex-direction: column;
+        margin-top: 1rem;
+        width: 15rem;
+    }
+}
+
+
+@media screen and (max-width : 536px) {
+    .comments__comment{
+        gap: 3.2rem;
+    }
+    .course-left{
+        width: 100%;
+    }
+    .course-info__video{
+        width: 100%;
+        
+    }
+    
+    .section-title::after{
+        width: 100%;
+    }
+    .course-details__seasson__part-icon{
+        font-size: 1.5rem;
+    }
+    .course-details__seasson__part-title{
+        font-size : 1.5rem
+    }
+    .accordion-body.course-details__seasson__body{
+        padding: 0.5rem;
+    }
+    .course-details__seasson__part{
+        padding: 0;
+    }
+    .accordion-button.course-details__seasson__header-link{
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width : 471px) {
+    .comments__comment{
+        flex-direction: column;
+        gap: 0;
+    }
+    .comments__comment__subcomment{
+        gap: 1rem;
+    }
+    .comments__comment__header{
+        align-items: flex-end;
+    }
+    .comments__comment-right{
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+}
+@media screen and (max-width : 440px) {
+    .course-left{
+        height: 25rem;
+    }
+    .course-details__introduction-title{
+        font-size: 1.9rem;
+    }
+
+
+    .course-details__seasson__part-right{
+        gap: 0.9rem;
+    }
+    .course-details__seasson__part-count{
+        width: 4rem;
+        height: 4rem;
+        font-size: 1.45rem;
+    }
+
+    .course-details__seasson__part-left,
+    .course-details__seasson__part-title{
+        font-size: 1.3rem;
+    }
+    .course-details__right{
+        width: 100%;
+    }
+}
+@media screen and (max-width : 384px) {
+    
+    .breadcrumb__link{
+        font-size: 1rem;
+    }
+
+    .course-details__box{
+        width: 11rem;
+        height: 14rem;
+        gap: 1rem;
+    }
+    .course-details__box-right{
+        font-size: 3rem;
+    }
+    .course-details__box-title,
+    .course-details__box-subtitle{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .course-details__box-left{
+        gap: 0.6rem;
+    }
+
+    .progress-point{
+        gap: 0.5rem;
+    }
+
+    .course-details__seasson__part-right{
+        gap: 0.5rem;
+    }
+    .course-details__seasson__part-left,
+    .course-details__seasson__part-title{
+        font-size: 1.18rem;
+    }
+}

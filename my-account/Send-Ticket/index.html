@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="vendor/BootStrap/BootStrap.css">
+    <link rel="stylesheet" href="vendor/SweetAlert2/sweet-alert_2.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="../shared-responsive.css">
+
+</head>
+
+<body>
+    <!--------------------------------  Header  -------------------------------->
+    <header class="header">
+        <top-bar></top-bar>
+    </header>
+    <!--------------------------------  Header  -------------------------------->
+
+    <!--------------------------------  Content-Section  -------------------------------->
+    <section class="content">
+        <div class="content-header">
+            <div class="container">
+                <span class="content-header__title">حساب کاربری من</span>
+                <span class="content-header__subtitle">پیشخوان</span>
+            </div>
+        </div>
+        <div class="content-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="sidebar">
+                            <span class="sidebar__name user-name"></span>
+                            <ul class="sidebar__list">
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../Account/">پیشخوان</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../Orders/">سفارش</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="#">کیف پول من</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../Edit/">جزئیات حساب کاربری</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../Buyed/">دوره های خریداری شده</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../Tickets/">تیکت های پشتیبانی</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../../contactUs.html">ارتباط با ما</a>
+                                </li>
+                                <li class="sidebar__item" id="logout-user">
+                                    <a class="sidebar__link" id="logout-btn">خروج از سیستم</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="ticket">
+                            <div class="ticket-header">
+                                <span class="ticket-header__title">ارسال تیکت جدید</span>
+                                <a class="ticket-header__link" href="../Tickets/">همه تیکت ها</a>
+                            </div>
+                            <div class="ticket-form" action="#">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label class="ticket-form__label">دپارتمان را انتخاب کنید:</label>
+                                        <select class="ticket-form__select selector-list" id="departments-list">
+                                            <!-- Loaded From JS -->
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="ticket-form__label">اولویت تیکت</label>
+                                        <select class="ticket-form__select" id="ticket-priorities" data-priority="2">
+                                            <option class="ticket-form__option" value="1">بالا</option>
+                                            <option class="ticket-form__option" value="2" selected>متوسط</option>
+                                            <option class="ticket-form__option" value="3">پایین</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="ticket-form__label">عنوان تیکت را وارد کنید:</label>
+                                        <input class="ticket-form__input" placeholder="عنوان تیکت..." type="text" id="ticket-title">
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="ticket-form__label">دپارتمان را انتخاب کنید:</label>
+                                        <select class="ticket-form__select selector-list" id="subdepartments-list">
+                                            <option class="ticket-form__option selector-list">لطفا یک مورد را انتخاب نمایید.</option>
+                                            <!-- Loaded From JS -->
+                                        </select>
+                                    </div>
+                                    <div class="col-6 d-none" id="course-col">
+                                        <label class="ticket-form__label" data-id=undefined >دوره مورد نظر : (اختیاری)</label>
+                                        <select class="ticket-form__select selector-list" id="courses-list">
+                                            
+                                            <!-- Loaded From JS -->
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="ticket-form__label">محتوای تیکت را وارد نمایید:</label>
+                                        <textarea class="ticket-form__textarea" placeholder="محتوای تیکت..." id="ticket-body"> </textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="ticket-form__file">
+                                            <span class="ticket-form__file-max">حداکثر اندازه: 6 مگابایت</span>
+                                            <span class="ticket-form__file-format">فرمت‌های مجاز: jpg, png.jpeg, rar, zip</span>
+                                            <input class="ticket-form__file-input" type="file">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="ticket-form__btn" id="send-ticket-btn" onclick="uploadTicket(event)">
+                                            <i class="ticket-form__btn-icon fa fa-paper-plane"></i>
+                                            ارسال تیکت
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------------------  Content-Section  -------------------------------->
+
+    <!--------------------------------  Footer-Section  -------------------------------->
+    <web-footer></web-footer>
+    <!--------------------------------  Footer-Section  -------------------------------->
+
+    <script src="vendor/FontAwesome5/font_awesome.js"></script>
+    <script src="vendor/SweetAlert2/sweet-alert_2.js"></script>
+    <script type="mofule" src="../../js/costomElemntsDefiner.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="../../js/my-account/shared-app.js"></script>
+</body>
+
+</html>

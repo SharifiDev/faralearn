@@ -1,0 +1,206 @@
+@import url(../../components/loader/loader.css);
+@import url(../default.css);
+@import url(../../components/topbar/topbar.css);
+@import url(../../components/navbar/navbar.css);
+@import url(../../components//mobileNav/mbileNav.css);
+@import url(../../components/course-box/course-box.css);
+@import url(../../components/course-row-box/course-row-box.css);
+@import url(../../components/footer/footer.css);
+@import url(../container.css);
+@import url(../../components/pagination/pagination.css);
+
+
+/*===============================     Start  Main Topbar Styles        ============================*/
+.main{
+    margin: 15rem 0 8rem 0;
+}
+
+.alert-danger{
+    display: block;
+    text-align: center;
+    background-color: #9b6868;
+    border-radius: 1rem;
+    margin-top: 4rem;
+    width: 100%;
+    padding: 4rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+/*======  Start Courses Topbar Styles =====*/
+.courses .container{
+    overflow: hidden;
+}
+.courses_topbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem ;
+    box-shadow: 0px 0px 2rem 4px #ffffff13;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+    background-color: var(--swiper-bg-color);
+}
+/* .courses__topbar-left{} */
+.courses__topbar__search-box{
+    width: 25rem;
+    height: 4rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0.6rem;
+    -webkit-border-radius: 0.6rem;
+    -moz-border-radius: 0.6rem;
+    -ms-border-radius: 0.6rem;
+    -o-border-radius: 0.6rem;
+    border: 2px solid var(--subtitle-color);
+}
+.courses__topbar__search-input{
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    color: var(--text-color);
+    
+    background-color: transparent;
+}
+.courses__topbar__search-input::placeholder{
+    color: var(--subtitle-color);
+}
+.courses__topbar__search-icon{
+    position: absolute;
+    left: 1rem;
+    cursor: pointer;
+}
+
+/* /////Right */
+
+.courses__topbar-right{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    
+}
+.courses__topbar__column-btn,
+.courses__topbar__row-btn{
+    padding: 1rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+    border: 1px solid var(--subtitle-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.courses__topbar__column-btn:hover:not(.courses__topbar__btn--active),
+.courses__topbar__row-btn:hover:not(.courses__topbar__btn--active){
+    background-color: var(--green-color);
+}
+.courses__topbar__btn--active{
+    background-color: var(--link-hover-color);
+}
+/* courses__topbar__column-icon
+courses__topbar__row-icon */
+.courses__topbar__selection{
+    position: relative;
+    
+    border-radius: 0.68rem;
+    -webkit-border-radius: 0.68rem;
+    -moz-border-radius: 0.68rem;
+    -ms-border-radius: 0.68rem;
+    -o-border-radius: 0.68rem;
+    border: 2px solid var(--subtitle-color);
+    cursor: pointer;
+}
+
+.courses__topbar__selection-title{
+    width: 26rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    border-radius: 0.68rem;
+    -webkit-border-radius: 0.68rem;
+    -moz-border-radius: 0.68rem;
+    -ms-border-radius: 0.68rem;
+    -o-border-radius: 0.68rem;
+
+}
+.courses__topbar__selection:hover{
+    border: none;
+    background-color: var(--link-hover-color);
+}
+
+.courses__topbar__selection:hover .courses__topbar__selection-icon{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.courses__topbar__selection-list{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    top: 4rem;
+    width: 130%;
+    background-color: var(--topBar-bg-color);
+    border-bottom: 3px solid var(--green-color);
+    z-index: 3;
+    border-radius: 1rem 0 1rem 1rem;
+    -webkit-border-radius: 1rem 0 1rem 1rem;
+    -moz-border-radius: 1rem 0 1rem 1rem;
+    -ms-border-radius: 1rem 0 1rem 1rem;
+    -o-border-radius: 1rem 0 1rem 1rem;
+}
+.courses__topbar__selection:hover .courses__topbar__selection-list{
+    visibility: visible;
+    opacity: 1;
+}
+.courses__topbar__selection-item{
+    width: 100%;
+    padding: 1.5rem 1rem;
+    white-space: nowrap;
+}
+.courses__topbar__selection-item:hover,
+.courses__topbar__selection-item--active{
+    background-color: var(--them-color);
+    /* padding-right: 0.7rem; */
+}
+.courses__topbar__selection-item:hover{
+    opacity: 0.7;
+    padding-right:1.2rem;
+}
+
+/*======  Finish Courses Topbar Styles =====*/
+
+
+/*======  Start Courses Main Styles =====*/
+
+.courses__main{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    width: 100%;
+    justify-content: center;
+    margin: 2rem 0;
+}
+/*======  Finish Courses Main Styles =====*/
+/*===============================       Finish  Main  Styles        ============================*/

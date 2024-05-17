@@ -1,0 +1,53 @@
+/*== Start Course Details Related Products Points  ==*/
+.aside-products{
+    width: 100%;
+    background-color: var(--swiper-bg-color);
+    padding: 2rem 1.2rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    border-bottom: 2px solid var(--topBar-bg-color);
+}
+.aside-products__title{
+    color: var(--text-color);
+    font-size: 2rem;
+    
+}
+.aside-products__list{
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    
+    margin-top: 2rem;
+}
+.aside-products__item{
+    width: 100%;
+    height: max-content;
+    padding: 1rem 0;
+}
+.aside-products__item:not(:last-child){
+    border-bottom: 1px solid var(--green-color);
+}
+.aside-products__link{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+.aside-products__link-img{
+    width: 10rem;
+    height: 5.177rem;
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+}
+.aside-products__link-title{
+    font-size: 1.25rem;
+    color: var(--subtitle-color);
+}
+/*== Finish Course Details Related Products Points  ==*/

@@ -1,0 +1,19 @@
+@media screen and (max-width : 768px) {
+    .section-header{
+        padding: 20px 30px 20px 20px;
+    }
+}
+
+@media screen and (max-width : 576px) {
+    .lates-courses__header-title{
+        font-size: 18px;
+    }
+    .lates-courses__header-text{
+        font-size: 14px;
+    }
+    
+    .lates-courses__header-button{
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+}

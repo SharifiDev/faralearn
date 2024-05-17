@@ -1,0 +1,18 @@
+:root{
+    --green-color :  #2bce56;
+    --text-color : #fff;
+    --main-bg-color : #ffffff46;
+    --them-color : #020621;;
+    --darck-color : #464749;
+    --link-hover-color : #008cff;
+    --topBar-bg-color : #5e73aa;
+    --navbar-A-bg-color : #380038b0;
+    --navBar-bg-color : #360036;
+    --sections-bg-color : #610061;
+    --shadow-color : #ffffff41;
+    --subtitle-color : #dad9d9;
+    --swiper-bg-color : #000000c2;
+    --article-shadow-color : #000000;
+    --article-transparent-shadow-color : #00000000;
+    --them-color-o : #020621a4;
+}

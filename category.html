@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> فرا لرن | دسته بندی دوره ها</title>
+     <!-- Reset Engine Default Styles -->
+     <link rel="stylesheet" href="./css/reset.css">
+
+
+     <!-- AOS Library -->
+     <link rel="stylesheet" href="./vendor/AOS/AOS.css">
+
+    <!-- fontAwesome library Icons Styles -->
+    <link rel="stylesheet" href="./vendor/fontAwesome/fontAwesome.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./css/fonts.css">
+
+    <!-- Variables Styles -->
+    <link rel="stylesheet" href="./css/variables.css">
+
+    <!-- Main Styles For Category -->
+    <link rel="stylesheet" href="./css/category/category.css">
+
+    <!-- Main Styles For Category -->
+    <link rel="stylesheet" href="./css/category/category_responsive.css">
+</head>
+<body>
+    <div class="loading-container">
+        <span class="loader"></span>
+    </div>
+
+    <header class="header">
+        <top-bar></top-bar>
+
+        <mobile-nav></mobile-nav>
+
+        <nav-bar></nav-bar>
+    </header>
+
+
+    <main class="main">
+        <section class="courses">
+            <div class="container">
+                <div class="courses_topbar">
+                    <div class="courses__topbar-right">
+                        <div class="courses__topbar__column-btn courses__topbar__btns" data-type="col">
+                            <i class="fas fa-border-all courses__topbar__colum-icon "></i>
+                        </div>
+    
+                        <div class="courses__topbar__row-btn courses__topbar__btns" data-type="row">
+                            <i class="fas fa-align-left courses__topbar__row-icon "></i>
+                        </div>
+    
+                        <div class="courses__topbar__selection">
+                            <span class="courses__topbar__selection-title">
+                                تمامی دوره ها
+                                <i class="fas fa-angle-down courses__topbar__selection-icon"></i>
+                            </span>
+                            <ul class="courses__topbar__selection-list">
+                                <li class="courses__topbar__selection-item courses__topbar__selection-item--active" data-key="all">تمامی دوره ها</li>
+                                <li class="courses__topbar__selection-item" data-key="score">انتخاب بر اساس امتیاز</li>
+                                <li class="courses__topbar__selection-item" data-key="last">انتخاب بر اساس آخرین </li>
+                                <li class="courses__topbar__selection-item" data-key="first">انتخاب بر اساس اولین</li>
+                                <li class="courses__topbar__selection-item" data-key="free">مرتب سازی بر اساس رایگان</li>                            
+                                <li class="courses__topbar__selection-item" data-key="money">مرتب سازی بر اساس غیررایگان</li>                            
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="courses__topbar-left">
+                        <div class="courses__topbar__search-box">
+                            <input type="text" class="courses__topbar__search-input" placeholder="جستجوی دوره...">
+                            <i class="fas fa-search courses__topbar__search-icon"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="courses__main" id="categor-courses-wrapper">
+
+                    
+                </div>
+    
+                <web-pagination></web-pagination>
+            </div>
+        </section>
+    </main>
+
+
+    <web-footer></web-footer>
+
+    <!-- Coutome Elements Definer -->
+    <script type="module" src="./js/costomElemntsDefiner.js"></script>
+
+    <!-- FontAwsome Lib Scripts -->
+    <script src="./vendor/fontAwesome/fontAwesome.js"></script>
+
+    <!-- AOS Lib Scripts -->
+    <script src="./vendor/AOS/AOS.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- SweetAlert Lib Scripts -->
+    <script src="./vendor/SweetAlert2/sweet-alert_2.js"></script>
+
+     <!-- Shared Items Between All Pages -->
+     <script src="./js/funcs/shared.js" type="module"></script>
+
+    <!-- Category Main Scripts -->
+    <script type="module" src="./js/category-pg/ctegory-app.js" defer></script>
+
+    <!-- Shared Scripts -->
+    <script type="module" src="./js/shared-app.js" defer></script>
+</body>
+</html>

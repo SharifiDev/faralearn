@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="vendor/swiperSlider/swiper.css" />
+    <link rel="stylesheet" href="vendor/BootStrap/Bootstrap5.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="loading-container">
+        <span class="loader"></span>
+    </div>
+
+    <div id="content">
+        <div id="sidebar" class="col-2">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">
+                    <a href="#"><img src="img/logo.png" alt="Logo"></a>
+                </div>
+                
+                <div class="sidebar-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div class="sidebar-menu">
+                <ul>
+                    <li class="active-menu"><a href="../main"><span>صفحه اصلی</span></a></li>
+                    <li><a href="../courses"><span>دوره ها</span></a></li>
+                    <li><a href="../menus"><span>منو ها</span></a></li>
+                    <li><a href="../users"><span>کاربران</span></a></li>
+                    <li><a href="../categories"><span>دسته‌بندی‌ ها</span></a></li>
+                    <li><a href="../contacts"><span>پیغام های ارتباطی</span></a></li>
+                    <li><a href="../sessions/"><span>جلسات</span></a></li>
+                    <li><a href="../articles/"><span>مقاله ها</span></a></li>
+                    <li><a href="../comments"><span>کامنت ها</span></a></li>
+                    <li><a href="../discounts/"><span>کد های تخفیف</span></a></li>
+                    <li><a href="../campaign/"><span>کمپین</span></a></li>
+                    <li><a href="../tickets/"><span>تیکت ها</span></a></li>
+                    <li><a id="logout-btn"><span>خروج</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="home" class="col-10">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="home-header">
+                        <div class="home-right">
+                            <div class="home-searchbar">
+                                <input type="text" class="search-bar" placeholder="جستجو...">
+                            </div>
+                            <div class="home-notification">
+                                <button type="button" id="notification-icon">
+                                    <i class="far fa-bell"></i>
+                                </button>
+                            </div>
+                            <div class="home-notification-modal" id="notification-modal">
+                                <ul class="home-notification-modal-list" id="notification-modal-list">
+                                    
+                                </ul>
+                            </div>
+                            <div class="mode">
+                                <ul class="mode-list">
+                                    <div class="mode-list-item mode-red"></div>
+                                    <div class="mode-list-item mode-blue"></div>
+                                    <div class="mode-list-item mode-dark"></div>
+                                    <div class="mode-list-item mode-light"></div>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="home-left">
+                            <div class="home-profile">
+                                <div class="home-profile-image">
+                                    <a href="#">
+                                        <img id="admin-img" alt="">
+                                    </a>
+                                </div>
+                                <div class="home-profile-name">
+                                    <a href="../edite-admin/" id="admin-name"></a>
+                                </div>
+                                <div class="home-profile-icon">
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" id="home-content">
+                <div class="container">
+                    <div class="home-content-title">
+                        <span class="welcome">خوش آمدید,<span class="name" id="admin-welcome-name"></span></span>
+                    </div>
+                    <div class="home-content-boxes">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="home-content-revanue box">
+                                    <div class="home-box">
+                                        <div class="home-box-left">
+                                            <div class="home-box-title">
+                                                <span>ثبت نامی ها</span>
+                                            </div>
+                                            <div class="home-box-value">
+                                                <div class="home-box-price">
+                                                    <span  class="panel-count"></span>
+                                                </div>
+                                                <div class="home-box-result">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <div class="home-box-text">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="home-box-right">
+                                            <div class="home-box-icon">
+                                                <i class="fas fa-users"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="home-content-sales box">
+                                    <div class="home-box">
+                                        <div class="home-box-left">
+                                            <div class="home-box-title">
+                                                <span>دوره ها</span>
+                                            </div>
+                                            <div class="home-box-value">
+                                                <div class="home-box-price">
+                                                    <span class="panel-count"></span>
+                                                </div>
+                                                <div class="home-box-result">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <div class="home-box-text">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="home-box-right">
+                                            <div class="home-box-icon">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="home-content-cost box">
+                                    <div class="home-box">
+                                        <div class="home-box-left">
+                                            <div class="home-box-title">
+                                                <span>جلسات</span>
+                                            </div>
+                                            <div class="home-box-value">
+                                                <div class="home-box-price">
+                                                    <span  class="panel-count"></span>
+                                                </div>
+                                                <div class="home-box-result">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <div class="home-box-text">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="home-box-right">
+                                            <div class="home-box-icon">
+                                                <i class="fas fa-video"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-content-chart">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                  <div id="sale-chart"></div>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div id="revanue-chart"></div>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div id="cost-chart"></div>
+                              </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                    </div>
+                    <div class="home-content-latset-users">
+                        <div class="home-content-users-title">
+                            <span>افراد اخیرا <span class="signup">ثبت نام </span>شده</span>
+                        </div>
+                        <div class="home-content-users-table">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>شناسه</th>
+                                        <th>نام</th>
+                                        <th>نام خانوادگی</th>
+                                        <th>شماره</th>
+                                        <th>ایمیل</th>
+                                        <th>نقش</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="lates-users-wrapper">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="vendor/swiperSlider/swiper.js"></script>
+    <script src="js/custom.js" type="module"></script>
+    <script src="../../js/panel/shared-app.js" type="module"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- fontAwesome library Icons Styles -->
+    <link rel="stylesheet" href="./vendor/fontAwesome/fontAwesome.css">
+
+    <!-- Reset Engine Default Styles -->
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./css/fonts.css">
+
+    <!-- Variables Styles -->
+    <link rel="stylesheet" href="./css/variables.css">
+
+    <!-- Default Style -->
+    <link rel="stylesheet" href="./css/default.css">
+
+    <!-- SweetAlert Lib Styles -->
+    <link rel="stylesheet" href="./vendor/SweetAlert2/sweet-alert_2.css">
+    
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="./css/login/login.css">
+    <link rel="stylesheet" href="./css/login/login_responsive.css">
+
+    <title>Asan | contactUS</title>
+</head>
+<body>
+    <div class="loading-container">
+        <span class="loader"></span>
+    </div>
+
+    <header class="header">
+        <top-bar></top-bar>
+
+        <mobile-nav></mobile-nav>
+
+        <nav-bar></nav-bar>
+    </header>    
+
+    <main class="main">
+        <section class="login-register">
+            <div class="login form">
+                <div class="login__header form__header">
+                    <span class="login__header-title form__header-title">ارتباط با ما</span>
+                    <span class="login__header-subtitle form__header-subtitle">نظر یا انتقادتو بنویس برامون :)</span>
+                </div>
+
+
+                <form class="login-form inputs">
+                    <div class="username inputs-inputBox">
+                        <input type="text" class="username-input inputs-input msg-input" id="name" placeholder="نام و نام خانوادگی خودرا واردکنید" required>
+                        <i class="fas fa-pen username-icon inputs-icon"></i>
+                    </div>
+
+                    <div class="password inputs-inputBox">
+                        <input type="text" class="password inputs-input msg-input" id="email" placeholder="آدرس ایمیل خود را وارد کنید." required>
+                        <i class="fas fa-envelope password-icon inputs-icon"></i>
+                    </div>
+
+                    <div class="password inputs-inputBox">
+                        <input type="text" class="password inputs-input msg-input" id="phone" placeholder="شماره تماس خود را واردکنید" required>
+                        <i class="fas fa-phone password-icon inputs-icon"></i>
+                    </div>
+
+                    <textarea placeholder="نظرتونو وارد کنید." id="body" class="msg-input"></textarea>
+
+                    <button type="submit" class="form-btn" id="send-btn">
+                        <span class="form-btn__text">ارسال</span>
+                    </button>
+                </form>
+            </div>            
+        </section>
+    </main>
+
+    <web-footer></web-footer>
+
+    <!-- Coutome Elements Definer -->
+    <script type="module" src="./js/costomElemntsDefiner.js"></script>
+
+    <!-- FontAwsome Lib Scripts -->
+    <script src="./vendor/fontAwesome/fontAwesome.js"></script>
+
+    <!-- SweetAlert Lib Scripts -->
+    <script src="./vendor/SweetAlert2/sweet-alert_2.js"></script>
+
+    <!-- Shared Items Between All Pages -->
+    <script src="./js/funcs/shared.js" type="module"></script>
+        
+    <!-- Main Scripts -->
+    <script type="module" src="./js/contactUs-pg/contactUs.js" defer></script>
+
+    <!-- Shared Scripts -->
+    <script type="module" src="./js/shared-app.js" defer></script>
+</body>
+</html>

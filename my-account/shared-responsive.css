@@ -1,0 +1,21 @@
+@media screen and (max-width : 800px) {
+    .container .row .col-3{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .container .row .col-9{
+        width: 100%;
+    }
+    
+    .sidebar__list{
+        display: flex;
+        width: 100%;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sidebar__item{
+        border-bottom: 1px solid var(--green-color);
+        margin-bottom: 0.25rem;
+    }
+}
