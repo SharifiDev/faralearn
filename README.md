@@ -31,7 +31,10 @@
 
 <h2>Demo Images :</h2>
  <p>
- <img src="./images/readme/header.png">
+ <img src="./images/readme/header.png?raw=true">
+ <img src="./images/readme/courses.png?raw=true">
+ <img src="./images/readme/course.png?raw=true">
+ <img src="./images/readme/catagory.png?raw=true">
  </p>
 <!-- <p>
   <img src="https://github.com/hossein-ghanimati/asancode/blob/main/project-demo/demo-1.png?raw=true" />
@@ -47,5 +50,5 @@
 
 
 <h2 align="center">
-  <a href="https://hossein-ghanimati.github.io/asancode/"><img src="https://img.shields.io/badge/See%20Demo-8A2BE2" /></a>
+  <a href="https://sharifidev.github.io/faralearn/"><img style="width:100px;height:30px" src="https://img.shields.io/badge/See%20Demo-8A2BE2" /></a>
 </h2>
