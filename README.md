@@ -1,9 +1,9 @@
-<h1 align="center">- <a href="https://hossein-ghanimati.github.io/asancode/index.html"> faralearn.com </a> -</h1>
+<h1 align="center">- <a href="https://sharifidev.github.io/faralearn/index.html">sharifidev.github.io/faralearn </a> -</h1>
 
 
 <h2>Developers : </h2>
 <ul>
-  <li>🖥 &nbsp; Front End Developer : <a href="github.com/hossein-ghanimati">Hossein Ghanimati</a></li>
+  <li>🖥 &nbsp; Front End Developer : <a href="github.com/sharifidev">Ali Sharifi</a></li>
   <li>👨‍💻 &nbsp; Back End Developer : <a href="https://sabzlearn.ir">Sabzlearn Teams</a></li>
 </ul>
 
